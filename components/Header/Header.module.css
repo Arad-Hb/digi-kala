@@ -1,0 +1,5 @@
+.accordionContainer{
+    width: 100%;
+    background-color: aquamarine;
+    transition:height 3s;
+}

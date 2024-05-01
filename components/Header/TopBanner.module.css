@@ -1,0 +1,6 @@
+.topBannerImage{
+    height:unset !important;
+}
+.topBannerContainer{
+    min-height:60px;
+}
