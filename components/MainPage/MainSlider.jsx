@@ -3,12 +3,12 @@ import React, { useContext } from 'react'
 import "react-image-gallery/styles/css/image-gallery.css"
 import ReactImageGallery from 'react-image-gallery'
 
-const MainCarousel = () => {
-  const {mainCarouselImages}=useContext(Context)
+const MainSlider = () => {
+  const {mainSliderImages}=useContext(Context)
   return (
     <div>
       <ReactImageGallery 
-     items={mainCarouselImages}
+     items={mainSliderImages}
      autoPlay={true}
      slideInterval={3000}
      lazyLoad={true}
@@ -24,4 +24,4 @@ const MainCarousel = () => {
   )
 }
 
-export default MainCarousel
+export default MainSlider

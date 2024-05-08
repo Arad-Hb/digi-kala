@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import localFont from 'next/font/local'
+import { Provider } from 'react-redux'
+import { Store } from '@/redux/Store'
 
 
 const iranSansFont=localFont(
@@ -23,7 +25,8 @@ export default function App({ Component, pageProps }) {
   
   return(
     <>
-      <div className={iranSansFont.className}>
+    <Provider store={Store}>
+    <div className={iranSansFont.className}>
       <Header/>
       </div>
       
@@ -31,7 +34,7 @@ export default function App({ Component, pageProps }) {
       <div className={BnazaninFont.className}>
       <Footer/>
       </div>
-      
+    </Provider>
     </>
   )
 }

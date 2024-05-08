@@ -1,9 +1,12 @@
 import React from 'react'
 import style from './Footer.module.css'
+import Counter from '../Counter'
 
 const Footer = () => {
   return (
-    <div>من فوتر هستم</div>
+    <div>
+      <Counter/>
+    </div>
   )
 }
 

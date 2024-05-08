@@ -1,5 +1,7 @@
 import Context from "@/ContextAPI/Context";
-import MainCarousel from "@/components/MainPage/MainCarousel";
+import DigiIcons from "@/components/MainPage/DigiIcons";
+import MainSlider from "@/components/MainPage/MainSlider";
+import IncredibleOffer from "@/components/MainPage/Products/IncredibleOffer";
 
 import { GET } from "@/repository/FetchRepository";
 // import * as fetchRepository from '@/repository/FetchApiRepository'
@@ -12,8 +14,10 @@ export default function Home(props) {
   
   return (
     <>
-      <Context.Provider value={{mainCarouselImages:props.carouselImages}}>
-          <MainCarousel/>
+      <Context.Provider value={{mainSliderImages:props.SliderImages,digiIcons:props.digiIcons}}>
+          <MainSlider/>
+          <DigiIcons data={props.digiIcons}/>
+          <IncredibleOffer data={props.incOfferProducts}/>
       </Context.Provider>
         
       
@@ -21,11 +25,19 @@ export default function Home(props) {
   );
 }
 export async function getStaticProps(context){
-  const mainCarouselResponse=await GET('public/mainSlider')
-  const mainCarouselResult=await mainCarouselResponse.json()
+  const mainSliderResponse=await GET('public/mainSlider')
+  const mainSliderResult=await mainSliderResponse.json()
+
+  const digiIconsResponse=await GET('SevenIcons')
+  const digiIconsResult=await digiIconsResponse.json()
+
+  const incOfferResponse=await GET('products/incredibleOffers')
+  const incOfferResult=await incOfferResponse.json()
   return{
     props:{
-      carouselImages:mainCarouselResult
+      SliderImages:mainSliderResult,
+      digiIcons:digiIconsResult,
+      incOfferProducts:incOfferResult
     },
     revalidate:5000
   }
