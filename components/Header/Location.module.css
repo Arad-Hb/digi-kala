@@ -1,0 +1,9 @@
+.locationLink{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}

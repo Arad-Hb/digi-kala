@@ -9,12 +9,12 @@ const DigiIcons = ({data}) => {
         {
             data.map(item=>{
                 return(
-                <Link href={`/products/category/${item.url}`}>
+                <a href={`/products/category/${item.url}`} onClick={()=>console.log("icon clicked")}>
                   <div className={`${styles.iconsCard}`}>
                       <Image src={`/images/${item.iconName}`} alt={item.label} height={40} width={40}/>
                       <label className={`${styles.iconsLabel}`}>{item.label}</label>
                   </div>
-                </Link>
+                </a>
                 )
                 
             })

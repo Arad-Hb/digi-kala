@@ -1,0 +1,16 @@
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    background-color: silver;
+    border-radius: 14px;
+}
+.searchBoxContent{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.searchBoxButton{
+    background-color: transparent;
+    color: black;
+    border: none;
+}

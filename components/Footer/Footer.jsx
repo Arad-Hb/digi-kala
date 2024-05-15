@@ -5,7 +5,7 @@ import Counter from '../Counter'
 const Footer = () => {
   return (
     <div>
-      <Counter/>
+      
     </div>
   )
 }

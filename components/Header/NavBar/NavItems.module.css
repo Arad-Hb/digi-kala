@@ -1,0 +1,13 @@
+.navItems{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.navItem{
+    text-decoration: none;
+display: flex;
+flex-direction: row;
+color: darkgray;
+}

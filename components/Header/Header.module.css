@@ -1,5 +1,26 @@
-.accordionContainer{
-    width: 100%;
-    background-color: aquamarine;
-    transition:height 3s;
+.profileShoppingContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.searchLogo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile{
+    background-color: white;
+    color:grey;
+    border: none;
+}
+.sepLine{
+    content: '';
+    background-color: grey;
+    width:1px;
+    height: 25px;
+}
+.shoppingBasketButton{
+    background-color: white;
+    color:grey;
+    border: none;
 }

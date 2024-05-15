@@ -1,12 +1,12 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import localFont from 'next/font/local'
 import { Provider } from 'react-redux'
 import { Store } from '@/redux/Store'
+import { GET } from '@/repository/FetchRepository'
+import "@/styles/globals.css"
+import Link from 'next/link'
 
 
 const iranSansFont=localFont(
@@ -21,20 +21,22 @@ const iranSansFont=localFont(
 const BnazaninFont=localFont({src:'../public/fonts/Bnazanin/BNazanin.woff'})
 
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps}) {
   
   return(
     <>
     <Provider store={Store}>
-    <div className={iranSansFont.className}>
-      <Header/>
-      </div>
-      
-      <Component {...pageProps} />
-      <div className={BnazaninFont.className}>
-      <Footer/>
-      </div>
+      <div className={iranSansFont.className}>
+        <Header/>
+        <Component {...pageProps} />
+        <Footer/>
+      </div> 
     </Provider>
+    <div>
+      <Link href={'/'}>back to home</Link>
+    </div>
     </>
   )
 }
+
+

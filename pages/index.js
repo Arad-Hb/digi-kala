@@ -2,7 +2,6 @@ import Context from "@/ContextAPI/Context";
 import DigiIcons from "@/components/MainPage/DigiIcons";
 import MainSlider from "@/components/MainPage/MainSlider";
 import IncredibleOffer from "@/components/MainPage/Products/IncredibleOffer";
-
 import { GET } from "@/repository/FetchRepository";
 // import * as fetchRepository from '@/repository/FetchApiRepository'
 // import * as axiosRepository from '@/repository/AxiosRepository'
@@ -25,6 +24,10 @@ export default function Home(props) {
   );
 }
 export async function getStaticProps(context){
+  const topBannerResponse=await GET('topBanner')
+  const topBannerResult=await topBannerResponse.json()
+  
+
   const mainSliderResponse=await GET('public/mainSlider')
   const mainSliderResult=await mainSliderResponse.json()
 
@@ -35,6 +38,7 @@ export async function getStaticProps(context){
   const incOfferResult=await incOfferResponse.json()
   return{
     props:{
+      topBannerImage:topBannerResult,
       SliderImages:mainSliderResult,
       digiIcons:digiIconsResult,
       incOfferProducts:incOfferResult

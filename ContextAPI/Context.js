@@ -1,8 +1,8 @@
 const { createContext } = require("react");
 
 const Context = createContext({
-    mainCarouselImages:[] 
-   
+    topBannerImage:{},
+    mainCarouselImages:[]
 })
 
 export default Context;

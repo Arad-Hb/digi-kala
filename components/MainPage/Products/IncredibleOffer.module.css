@@ -1,8 +1,10 @@
 .outerContainer {
-    background-color: #dd4c59;
+    background: rgb(239,57,78);
+    background: linear-gradient(180deg, rgba(239,57,78,1) 0%, rgba(239,64,86,1) 100%);
     display: flex;
     padding: 20px;
     border-radius: 12px;
+    direction: rtl;
 }
 
 .imageContainer {

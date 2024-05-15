@@ -14,7 +14,7 @@ const Login = ({data}) => {
     console.log(result.length);
   }
   return (
-    <Container>
+    <div>
         <Form onSubmit={submitHandler}>
             <Form.Label>Enter User Name:</Form.Label>
             <Form.Control ref={username}></Form.Control>
@@ -22,7 +22,7 @@ const Login = ({data}) => {
             <Form.Control ref={password}></Form.Control>
             <Button type='submit'>Enter</Button>
         </Form>
-    </Container>
+    </div>
   )
 }
 

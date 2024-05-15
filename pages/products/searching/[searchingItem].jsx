@@ -7,6 +7,7 @@ const searchingItem = (props) => {
     const searchingResult=props.searchingResult
   return (
     <div>
+        <h1>searching page</h1>
 {
     searchingResult.map(item=>{
         return<div>
@@ -24,7 +25,7 @@ export async function getServerSideProps(context){
     const searchingItem=context.params.searchingItem
     const response=await GET(`products/search/${searchingItem}`)
     const result=await response.json()
-
+   console.log(result);
     return{
         props:{
             searchingResult:result
