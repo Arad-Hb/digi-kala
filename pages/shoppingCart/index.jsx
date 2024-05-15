@@ -2,7 +2,10 @@ import React from 'react'
 
 const index = () => {
   return (
-    <div>this is shopping cart page</div>
+    <div>
+      <h1>this is shopping cart page</h1>
+      
+    </div>
   )
 }
 
