@@ -1,9 +1,14 @@
 .locationLink{
     text-decoration: none;
-    color: darkgray;
-    font-size: 14px;
+    color: #424750;
     align-items: center;
     display: flex;
-    flex: row;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: end;
+}
+.locationIcon{
+    font-size:18px;
+}
+.locationText{
+    font-size: 12px;
 }

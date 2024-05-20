@@ -1,6 +1,11 @@
 .navItems{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+
+}
+.navItemLink{
     text-decoration: none;
-    color:black;
-font-size: 14px;
-font-weight: 500;
+    color: #424750;
+    font-size: 12px;
 }

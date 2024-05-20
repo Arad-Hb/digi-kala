@@ -11,32 +11,32 @@ const NavItems = () => {
       <ul className={`${styles.navItems}`}>
         <li>
           <Link href={'/contactUs'} className={`${styles.navItem}`}>
-          <RiDiscountPercentLine />
-            <span>شگفت انگیزها</span>
+            <RiDiscountPercentLine  className={`${styles.navItemIcon}`}/>
+            <span className={`${styles.navItemText}`}>شگفت انگیزها</span>
           </Link>
         </li>
         <li>
           <Link href={'/contactUs'} className={`${styles.navItem}`}>
-          <RiShoppingBasketLine />
-            <span>سوپر مارکت</span>
+          <RiShoppingBasketLine  className={`${styles.navItemIcon}`}/>
+            <span className={`${styles.navItemText}`}>سوپر مارکت</span>
           </Link>
         </li>
         <li>
           <Link href={'/contactUs'} className={`${styles.navItem}`}>
-          <MdCardGiftcard />
-            <span>کارت هدیه</span>
+          <MdCardGiftcard  className={`${styles.navItemIcon}`}/>
+            <span className={`${styles.navItemText}`}>کارت هدیه</span>
           </Link>
         </li>
         <li>
           <Link href={'/contactUs'} className={`${styles.navItem}`}>
-          <RiFireLine />
-            <span>پرفروش ترین ها</span>
+          <RiFireLine  className={`${styles.navItemIcon}`}/>
+            <span className={`${styles.navItemText}`}>پرفروش ترین ها</span>
           </Link>
         </li>
         <li>
           <Link href={'/contactUs'} className={`${styles.navItem}`}>
-          <RiCoupon3Line />
-            <span>تخفیف ها و پیشنهادها</span>
+          <RiCoupon3Line  className={`${styles.navItemIcon}`}/>
+            <span className={`${styles.navItemText}`}>تخفیف ها و پیشنهادها</span>
           </Link>
         </li>
       </ul>

@@ -1,10 +1,9 @@
+
 .outerContainer {
-    background: rgb(239,57,78);
     background: linear-gradient(180deg, rgba(239,57,78,1) 0%, rgba(239,64,86,1) 100%);
     display: flex;
     padding: 20px;
     border-radius: 12px;
-    direction: rtl;
 }
 
 .imageContainer {
@@ -12,10 +11,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 10%;
+    margin:5px 20px;
+    justify-content: center;
+    
 }
 
 .carouselContainer {
     width: 90%;
+ 
+}
+.incOfferBoxPic{
+ 
+}
+.incOfferTextPic{
+    background-color: #ef3d52;
+    margin:20px auto;
+}
+.incOfferText{
+   
+    font-size: 12px;
+    font-weight: bold;
+ text-decoration: none;
+ color: white;
 }

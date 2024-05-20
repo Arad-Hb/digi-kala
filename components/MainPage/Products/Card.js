@@ -12,7 +12,7 @@ const Card = ({product}) => {
         </div>
         <p align="justify" className={`${styles.productName}`}> {product.name.substring(0, 25)}{product.name.length > 25 ? "..." : null}</p>
        
-                <Image  className={`${styles.imageContainer}`} alt={product.name} src={product.indexImageUrl} width={200} height={200} />
+                <Image alt={product.name} src={product.indexImageUrl} width={200} height={200} />
                 {product.priceWithDiscount === 0 ? (
           <div className={`${styles.priceContainer}`}>
             {product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} تومان

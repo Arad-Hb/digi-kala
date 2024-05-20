@@ -1,14 +1,42 @@
-.profileShoppingContent{
+.headerContainer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.searchLogo{
+.topBannerRow{
+display: flex;
+height: 30px;
+}
+.searchLogoProfileRow{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.searchLogoContainer{
+    flex-basis: 80%;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
 }
-.profile{
+.logoContainer{
+margin:5px 10px;
+}
+.searchContainer{
+    margin:5px 10px;
+}
+.profileShoppingContainer{
+flex-basis: 20%;
+display: flex;
+flex-direction: row;
+justify-content: end;
+}
+.profileContainer{
+
+}
+.profileLink{
     background-color: white;
     color:grey;
     border: none;
@@ -18,9 +46,22 @@
     background-color: grey;
     width:1px;
     height: 25px;
+    margin: 5px 20px;
 }
-.shoppingBasketButton{
+.shoppingBasketContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 20px;
+}
+.shoppingBasketLink{
     background-color: white;
     color:grey;
     border: none;
+}
+.navBarRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

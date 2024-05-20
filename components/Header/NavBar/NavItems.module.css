@@ -3,11 +3,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    margin-top: 3px;
 }
 .navItem{
-    text-decoration: none;
+text-decoration: none;
 display: flex;
 flex-direction: row;
-color: darkgray;
+align-items: center;
+
+}
+.navItemIcon{
+    font-size: 18px;
+    margin-left: 5px;
+    color:#62666d;
+}
+.navItemText{
+font-size: 12px;
+color: #424750;
 }

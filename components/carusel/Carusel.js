@@ -1,6 +1,7 @@
-import Slider from 'react-slick'
-import "../../node_modules/slick-carousel/slick/slick.css";
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { NextArrow } from './CaruselArrow';
 import { PrevArrow } from './CaruselArrow';
 import Card from '../MainPage/Products/Card';
@@ -16,19 +17,19 @@ const Carusel = (props) => {
         centerPadding: "1em",
         swipeToSlide: true,
         rtl: true,
-        slidesToShow: props.cardsCount,
+        slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: <NextArrow width="30px" height="30px" />,
         prevArrow: <PrevArrow width="30px" height="30px" />,
         responsive: [
           {
-            breakpoint: 280,
+            breakpoint: 300,
             settings: {
               slidesToShow: 1,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
-              centerPadding: "5px",
+              centerPadding: "1px",
             },
           },
           {
@@ -42,19 +43,9 @@ const Carusel = (props) => {
             },
           },
           {
-            breakpoint: 570,
+            breakpoint: 680,
             settings: {
               slidesToShow: 1,
-              speed: 100,
-              adaptiveHeight: true,
-              slidesToScroll: 1,
-              centerPadding: "10px",
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
@@ -62,7 +53,27 @@ const Carusel = (props) => {
             },
           },
           {
+            breakpoint: 880,
+            settings: {
+              slidesToShow: 2,
+              speed: 100,
+              adaptiveHeight: true,
+              slidesToScroll: 1,
+              centerPadding: "1px",
+            },
+          },
+          {
             breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              speed: 100,
+              adaptiveHeight: true,
+              slidesToScroll: 1,
+              centerPadding: "1px",
+            },
+          },
+          {
+            breakpoint: 1171,
             settings: {
               slidesToShow: 3,
               speed: 100,
@@ -85,19 +96,21 @@ const Carusel = (props) => {
       };
 
   return (
-    <Slider
-        
-        {...settings}
-          autoplay={true}
-          autoplaySpeed={2000}
-          focusOnSelect={false}
-          rtl={true}
-          slidesToScroll={1}
-        >
+    <div className="slider-container">
+      <Slider
+      {...settings}
+      autoplay={true}
+      autoplaySpeed={2000}
+      focusOnSelect={false}
+      rtl={true}
+      slidesToScroll={1}
+      >
           {props.data.map((item) => (
             <Card key={item.id} product = {item} />
           ))}
-        </Slider>
+      </Slider>
+    </div>
+    
         
   );
 }

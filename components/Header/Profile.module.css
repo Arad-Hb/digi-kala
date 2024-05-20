@@ -1,0 +1,33 @@
+.profileContainer{
+    
+    border: 1px solid #e0e0e2;
+    border-radius: 7px;
+    width: 130px;
+    height: 40px;
+    
+}
+.profileLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.profileIcon{
+font-size: 22px;
+margin-left:4px;
+color: #4c5059;
+}
+.profileText{
+font-size: 12px;
+}
+.profileSepLine{
+    content: '';
+    background-color: black;
+    width:1px;
+    height: 20px;
+    padding: 0px .7px;
+    margin:0px 4px;
+}

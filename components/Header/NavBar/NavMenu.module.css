@@ -1,11 +1,11 @@
 .menuLink{
     text-decoration: none;
-    color: black;
-    font-size: 14px;
+    color: #424750;
+    
 }
 .menuIcon{
-
+    font-size: 18px;
 }
 .menuTitle{
-
+    font-size: 12px;
 }

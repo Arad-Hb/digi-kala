@@ -8,8 +8,8 @@ const NavMenu = () => {
   return (
     <div>
       <Link href={''} className={`${styles.menuLink}`}>
-      <GiHamburgerMenu />
-        <span className={`${styles.menuTitle}`}>دسته بندی کالاها</span>
+      <GiHamburgerMenu className={`${styles.menuIcon}`} />
+      <span className={`${styles.menuTitle}`}>دسته بندی کالاها</span>
       </Link>
     </div>
   )

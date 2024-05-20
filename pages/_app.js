@@ -9,6 +9,7 @@ import "@/styles/globals.css"
 import Link from 'next/link'
 
 
+
 const iranSansFont=localFont(
 {src:'../public/fonts/iransansx/IRANSansXRegular.ttf'},
 {src:'../public/fonts/iransansx/IRANSansXBlack.ttf'},
@@ -24,18 +25,19 @@ const BnazaninFont=localFont({src:'../public/fonts/Bnazanin/BNazanin.woff'})
 export default function App({ Component, pageProps}) {
   
   return(
-    <>
+    <div  className={iranSansFont.className}>
+    
     <Provider store={Store}>
-      <div className={iranSansFont.className}>
-        <Header/>
-        <Component {...pageProps} />
-        <Footer/>
-      </div> 
-    </Provider>
-    <div>
+      
+      <Header/>
+      <Component {...pageProps} />
+      <Footer/>
+    
+  </Provider>
+    
+    
       <Link href={'/'}>back to home</Link>
-    </div>
-    </>
+    </div> 
   )
 }
 

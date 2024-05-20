@@ -1,0 +1,16 @@
+.shoppingCartIconContainer{
+display: flex;
+position: relative;
+}
+.shoppingCartLink{
+    text-decoration: none;
+}
+.shoppingCartIcon{
+font-size: 26px;
+color:#424750;
+}
+.shoppingCartBadge{
+position: absolute;
+top: 15px;
+right: -2px;
+}

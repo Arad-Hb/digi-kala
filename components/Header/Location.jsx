@@ -9,8 +9,8 @@ const Location = () => {
     <Row>
         <div>
             <Link href={'#'} className={`${styles.locationLink}`}>
-                <GrLocation />
-                <span>لطفا شهر خود را انتخاب کنید</span>
+                <GrLocation  className={`${styles.locationIcon}`}/>
+                <span className={`${styles.locationText}`}>لطفا شهر خود را انتخاب کنید</span>
             </Link>
         </div>
     </Row>

@@ -3,6 +3,7 @@ import DigiIcons from "@/components/MainPage/DigiIcons";
 import MainSlider from "@/components/MainPage/MainSlider";
 import IncredibleOffer from "@/components/MainPage/Products/IncredibleOffer";
 import { GET } from "@/repository/FetchRepository";
+import styles from "@/styles/Home.module.css"
 // import * as fetchRepository from '@/repository/FetchApiRepository'
 // import * as axiosRepository from '@/repository/AxiosRepository'
 // and in my getSatitcProps Function=> fetchRepository.GET("public/mainSlider")
@@ -12,15 +13,15 @@ import { GET } from "@/repository/FetchRepository";
 export default function Home(props) {
   
   return (
-    <>
-      <Context.Provider value={{mainSliderImages:props.SliderImages,digiIcons:props.digiIcons}}>
-          <MainSlider/>
-          <DigiIcons data={props.digiIcons}/>
-          <IncredibleOffer data={props.incOfferProducts}/>
+    <div className={`${styles.Home}`}>
+      <Context.Provider value={{mainSliderImages:props.SliderImages,digiIcons:props.digiIcons,incOfferProducts:props.incOfferProducts}}>
+          <div className={`${styles.mainSlider}`}><MainSlider/></div>
+          <div className={`${styles.digiIcons}`}><DigiIcons data={props.digiIcons}/></div>
+          <div className={`${styles.incredibleOffer}`}><IncredibleOffer data={props.incOfferProducts}/></div>
       </Context.Provider>
         
       
-    </>
+    </div>
   );
 }
 export async function getStaticProps(context){

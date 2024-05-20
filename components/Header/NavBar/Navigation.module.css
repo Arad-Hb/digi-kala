@@ -1,0 +1,17 @@
+
+.navigationContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    text-align: center;
+}
+.navMenu{
+flex-basis: 10%;
+}
+.navItems{
+flex-basis: 70%;
+}
+.navOffers{
+flex-basis: 20%;
+}

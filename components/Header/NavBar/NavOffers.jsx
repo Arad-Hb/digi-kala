@@ -5,10 +5,10 @@ import styles from './NavOffers.module.css'
 
 const NavOffers = () => {
   return (
-    <Row>
-        <Col><Link href={'/contactUs'} className={`${styles.navItems}`}>در دیجی کالا بفروشید!</Link></Col>
-        <Col><Link href={'/contactUs'} className={`${styles.navItems}`}>سوالی دارید؟</Link></Col>
-    </Row>
+    <div className={`${styles.navItems}`}>
+        <div><Link href={'/contactUs'} className={`${styles.navItemLink}`}>در دیجی کالا بفروشید!</Link></div>
+        <div><Link href={'/contactUs'} className={`${styles.navItemLink}`}>سوالی دارید؟</Link></div>
+    </div>
   )
 }
 

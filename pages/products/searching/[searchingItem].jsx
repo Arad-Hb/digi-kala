@@ -6,8 +6,7 @@ import styles from './[searchingItem].module.css'
 const searchingItem = (props) => {
     const searchingResult=props.searchingResult
   return (
-    <div>
-        <h1>searching page</h1>
+    <div className={`${styles.searchBoxItems}`}>
 {
     searchingResult.map(item=>{
         return<div>

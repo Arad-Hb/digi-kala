@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import React, { useRef } from 'react'
 import styles from './SearchBox.module.css'
-import { Button, Form } from 'react-bootstrap'
 import { LuSearch } from "react-icons/lu"
+
 
 const SearchBox = () => {
     const text=useRef()
@@ -12,14 +12,11 @@ const SearchBox = () => {
         router.push(`/products/searching/${text.current.value}`)
     }
   return (
-    <div>
-        <Form onSubmit={submitHandler} className={`${styles.searchBox}`}>
-            <Form.Control ref={text} className={`${styles.searchBoxContent}`}>
-            </Form.Control>
-            <Button type='submit' className={`${styles.searchBoxButton}`}>
-            <LuSearch />
-            </Button>
-        </Form>
+    <div className={`${styles.searchBoxContainer}`}>
+      <input type='text' ref={text} className={`${styles.searchBox}`} placeholder='جستوجو در'/>
+      <button type='submit' onClick={submitHandler} className={`${styles.searchBoxButton}`}>
+      <LuSearch />
+      </button>
     </div>
   )
 }
