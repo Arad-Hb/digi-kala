@@ -1,0 +1,6 @@
+.outerContainer{
+    color: #81859a;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}

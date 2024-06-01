@@ -1,13 +1,13 @@
 import Card from '@/components/MainPage/Products/Card'
 import { GET } from '@/repository/FetchRepository'
 import React from 'react'
-import styles from './[selectedDigiIcon].module.css'
+import styles from './[selectedCategory].module.css'
 
-const selectedDigiIcon = (props) => {
+const selectedCategory = (props) => {
   return (
     <div className={`${styles.selectedCategory}`}>
         {
-            props.selectedIconCategory.map(item=>{
+            props.selectedItemCategory.map(item=>{
                 return<div><Card product={item}/></div>
             })
         }
@@ -16,18 +16,18 @@ const selectedDigiIcon = (props) => {
   )
 }
 
-export default selectedDigiIcon
+export default selectedCategory
 
 export async function getServerSideProps(context){
 
-    const digiIconUrl=context.params.selectedDigiIcon
-    const response=await GET(`products/${digiIconUrl}`)
+    const selectedItemUrl=context.params.selectedCategory
+    const response=await GET(`products/${selectedItemUrl}`)
     const result=await response.json()
   
     
     return{
         props:{
-            selectedIconCategory:result
+            selectedItemCategory:result
         }
     }
 }

@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from './DigiIcons.module.css'
-import Link from 'next/link'
 import { IoIosMore } from "react-icons/io";
 
 const DigiIcons = ({data}) => {

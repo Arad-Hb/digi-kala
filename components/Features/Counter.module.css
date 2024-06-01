@@ -1,0 +1,21 @@
+.counterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:80px;
+    height: 30px;
+    border:1px solid silver;
+    border-radius: 12px;
+    color: red;
+    font-weight: bold;
+}
+.counterLabel{
+
+}
+.counterButton{
+ border: none;
+ outline: none;
+background-color: white;
+color: red;
+}

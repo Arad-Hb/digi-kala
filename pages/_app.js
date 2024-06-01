@@ -3,10 +3,11 @@ import Header from '@/components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import localFont from 'next/font/local'
 import { Provider } from 'react-redux'
-import { Store } from '@/redux/Store'
+import { Store, persistor } from '@/redux/Store'
 import { GET } from '@/repository/FetchRepository'
 import "@/styles/globals.css"
 import Link from 'next/link'
+import { PersistGate } from 'redux-persist/integration/react'
 
 
 
@@ -28,14 +29,12 @@ export default function App({ Component, pageProps}) {
     <div  className={iranSansFont.className}>
     
     <Provider store={Store}>
-      
-      <Header/>
-      <Component {...pageProps} />
-      <Footer/>
-    
-  </Provider>
-    
-    
+      <PersistGate loading={<h1>...loading</h1>} persistor={persistor}>
+        <Header/>
+        <Component {...pageProps} />
+        <Footer/>
+      </PersistGate>
+    </Provider>
       <Link href={'/'}>back to home</Link>
     </div> 
   )

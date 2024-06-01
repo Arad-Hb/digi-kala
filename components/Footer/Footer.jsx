@@ -1,14 +1,20 @@
-import React, { useContext } from 'react'
-import style from './Footer.module.css'
-import Counter from '../Counter'
-import Carusel from '../carusel/Carusel'
-import Context from '@/ContextAPI/Context'
+import React from 'react'
+import styles from './Footer.module.css'
+import Partners from './Partners'
+import Introduction from './Introduction'
+import LegalApproval from './LegalApproval'
 
 const Footer = () => {
-  const {incOfferProducts}=useContext(Context)
+  
   return (
-    <div>
-      <Carusel  cardsCount={5} data={incOfferProducts}/>
+    <div className={`${styles.outerContainer}`}>
+      <div className={`${styles.introductionLegalContainer}`}>
+        <div className={`${styles.introduction}`}><Introduction/></div>
+        <div className={`${styles.legal}`}><LegalApproval/></div>
+      </div>
+      <div className={`${styles.copyWrite}`}>برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</div>
+      <div className={`${styles.partnerContainer}`}><Partners/></div>
+      
     </div>
   )
 }

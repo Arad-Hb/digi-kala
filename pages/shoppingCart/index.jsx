@@ -1,11 +1,14 @@
 import React from 'react'
+import styles from './index.module.css'
+import ShoppingCart from '@/components/Header/shoppingCart/ShoppingCart'
+
 
 const index = () => {
+ 
   return (
-    <div>
-      <h1>this is shopping cart page</h1>
-      
-    </div>
+    <>
+   <ShoppingCart/>
+    </>
   )
 }
 

@@ -1,0 +1,18 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.legalLogo{
+border: 1px solid silver;
+border-radius: 7px;
+}
+.legalLink{
+text-decoration: none;
+
+}
+.LegalImage{
+width: 75px;
+height: 75px;
+margin: 10px 10px;
+}

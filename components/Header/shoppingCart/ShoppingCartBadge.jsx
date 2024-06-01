@@ -4,8 +4,7 @@ import ShoppingItems from './ShoppingItems'
 
 
 const ShoppingCartBadge = () => {
-
-    
+ 
   return (
     <div className={`${styles.badgeContainer}`}><ShoppingItems/></div>
   )

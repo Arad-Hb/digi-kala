@@ -1,0 +1,15 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    color: #81859a;
+    font-size: 12px;
+}
+.firstRow{
+color:#81858b ;
+}
+.secondRow{
+    color:#b4abba ;
+}
+.thirdRow{
+    color:#c6c3c4 ;
+}

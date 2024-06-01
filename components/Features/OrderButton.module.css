@@ -1,0 +1,16 @@
+.OrderContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.OrderButton{
+ background-color: #e6123d;
+ color: white;
+ border:none;
+ width: 130px;
+ height: 30px;
+ border-radius: 12px;
+ font-size: 12px;
+ font-weight: bold;
+}

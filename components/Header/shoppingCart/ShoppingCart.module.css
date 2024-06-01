@@ -1,0 +1,16 @@
+.outerContainer{
+   display: flex;
+   flex-direction: row; 
+   text-align: center;
+   justify-content: space-around;
+   
+}
+.shoppingItemsContainer{
+flex-basis: 60%;
+
+}
+.paymentContainer{
+    flex-basis: 25%;
+    border:1px solid silver;
+    border-radius:7px;
+}
