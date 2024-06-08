@@ -1,0 +1,31 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalogueContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imageContainer{
+
+}
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.productName{
+
+}
+.productDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.describtion{
+
+}
+.orderCard{
+
+}

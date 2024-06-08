@@ -4,6 +4,8 @@ import CounterSlice from "./features/slices/CounterSlice"
 import shoppingCartSlice from "./features/slices/shoppingCartSlice"
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { persistReducer, persistStore } from 'redux-persist'
+import UsersSlice from './features/slices/UsersSlice'
+import menuSlice from './features/slices/menuSlice'
 
 const configuration = {
     key : "globalStorage" ,
@@ -13,7 +15,9 @@ const configuration = {
 
 const rootReducer = combineReducers({
     counterReducer:CounterSlice,
-    shoppingReducer:shoppingCartSlice
+    shoppingReducer:shoppingCartSlice,
+    usersReducer:UsersSlice,
+    menuReducer:menuSlice
 })
 
 

@@ -1,0 +1,34 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.categoryContainer{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: right;
+    
+}
+.categoryContainer:hover{
+    background-color: white;
+}
+.link{
+    text-decoration: none;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    color: black;
+    font-weight: bold;
+}
+.categoryContainer:hover .link{
+    color: red;
+    
+}
+.icon{
+
+}
+.text{
+ font-size: 14px;
+ margin-right: 5px;
+}

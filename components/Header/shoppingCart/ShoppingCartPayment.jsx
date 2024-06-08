@@ -1,28 +1,36 @@
 import OrderButton from '@/components/Features/OrderButton'
 import React from 'react'
-import { useSelector } from 'react-redux'
 import styles from './ShoppingCartPayment.module.css'
+import { ImInfo } from "react-icons/im"
 
-const ShoppingCartPayment = () => {
-    const state=useSelector(state=>state.shoppingReducer)
+const ShoppingCartPayment = ({data}) => {
+    
+    const totalPrices=data.totalPrices
+    const totalAmount=data.totalAmount
   return (
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.payments}`}>
             <label className={`${styles.paymentsLabel}`}>
                 <span>قیمت کالاها</span>
-                <span>{state.totalCount}</span>
+                <span>{totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</span>
             </label>
             <label className={`${styles.paymentsLabel}`}>
                 <span>جمع سبد خرید</span>
-                <span>{state.totalAmount}</span>
-            </label>
-            <label className={`${styles.paymentsLabel}`}>
-                <span>سود شما از خرید</span>
-                <span>{}</span>
+                <span>{totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</span>
             </label>
         </div>
         <div className={`${styles.orderButton}`}>
             <OrderButton/>
+        </div>
+        <div className={`${styles.digiClub}`}>
+            <div className={`${styles.digiClubTitle}`}>
+                <span className={`${styles.clubIcon}`}>
+                    <img src={'/images/club-point.svg'}  className={`${styles.clubImage}`} alt='digi club'/>
+                </span>
+                <span className={`${styles.titleText}`}>دیجی‌کلاب</span>
+                <span className={`${styles.infoIcon}`}><ImInfo /></span>
+            </div>
+            <div className={`${styles.digiClubPoint}`}>150 امتیاز</div>
         </div>
     </div>
   )

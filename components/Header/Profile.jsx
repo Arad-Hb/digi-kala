@@ -4,12 +4,10 @@ import Link from 'next/link'
 import { CgEnter } from 'react-icons/cg'
 
 const Profile = () => {
-    const setProfile=()=>{
-        alert("profile button clicked")
-      }
+
   return (
     <div className={`${styles.profileContainer}`}>
-        <Link href={'/profile/login'} onClick={setProfile} className={`${styles.profileLink}`}>
+        <Link href={'/users/LoginPage'}  className={`${styles.profileLink}`}>
             <span className={`${styles.profileIcon}`}><CgEnter /></span>
             <span className={`${styles.profileText}`}>ورود</span>
             <span className={`${styles.profileSepLine}`}></span>

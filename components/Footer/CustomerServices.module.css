@@ -1,0 +1,12 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.title{
+ color: black;
+}
+.link{
+    text-decoration: none;
+color: #81858b;
+}

@@ -1,0 +1,55 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c4b6d;
+    border-radius: 7px;
+    margin: 30px 40px;
+}
+.appSourcesHeader{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 30px;
+}
+.appSourcesLogo{
+    width: 44px;
+    height: 44px;
+}
+.appSourcesTitle{
+color: white;
+font-size: 24px;
+font-weight: bold;
+margin-right: 30px;
+}
+.appSourcesContainer{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 20px 30px;
+}
+.appSourcesButton{
+ text-decoration: none;
+margin: 0px 20px;
+}
+.appSourcesImage{
+    width: 142px;
+    height: 44px;
+    }
+.otherAppSourcesButton{
+background-color: white;
+border-radius: 7px;
+text-decoration: none;
+width: 44px;
+height: 44px;
+text-align: center;
+}
+.otherAppSources{
+    color: black;
+    font-size: 32px;
+    margin: 7px auto;
+    }

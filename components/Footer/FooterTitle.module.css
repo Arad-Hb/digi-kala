@@ -1,0 +1,46 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+.logoImage{
+    width: 113px;
+    height: 30px;
+    margin: 20px 10px;
+}
+.ContactUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+.seperator{
+    content: "";
+    background-color: silver;
+    width: 1px;
+    height: 20px;
+    margin: 5px 10px;
+}
+.ContactUsText{
+    font-size: 12px;
+    margin:5px 10px ;
+}
+.goUp{
+
+}
+.goUpButton{
+    text-decoration: none;
+    color: silver;
+    font-size: 14px;
+    border: 1px solid silver;
+    border-radius: 7px;
+    width: 100px;
+    height: 30px;
+    padding: 10px 20px;
+}

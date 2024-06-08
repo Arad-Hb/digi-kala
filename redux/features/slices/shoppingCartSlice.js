@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const INITIAL_STATE={items:[],totalCount:0,totalAmount:0}
+const INITIAL_STATE={items:[],totalCount:0,totalAmount:0,totalPrices:0}
 
 const refreshState=(state)=>{
     state.totalAmount=0
     state.totalCount=0
-    state.totalItemsInBasket=0
+    state.totalPrices=0
     state.items.map(item=>{
-        
+        state.totalPrices+=item.price*item.count
         state.totalCount+=item.count
         state.totalAmount+=item.priceWithDiscount!==0?item.priceWithDiscount*item.count:item.price*item.count
     })

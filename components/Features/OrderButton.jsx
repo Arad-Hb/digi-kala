@@ -3,7 +3,7 @@ import styles from './OrderButton.module.css'
 
 const OrderButton = () => {
     const OrderHandler=()=>{
-        console.log('orderClicked')
+        alert("خرید شما با موفقیت انجام شد")
     }
   return (
     <div className={`${styles.OrderContainer}`}>

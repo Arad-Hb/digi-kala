@@ -1,6 +1,47 @@
 .outerContainer{
 
 }
+.mainFooterContainer{
+    
+}
+.footerTitle{
+    
+}
+.deliveryContainer{
+
+}
+.aboutUsContainer{
+    margin: 30px 30px;
+}
+.withDigikalaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: right;
+}
+.aboutUs{
+    flex-basis: 25%;
+}
+.customerServices{
+   flex-basis: 25%; 
+}
+.orderGuidance{
+  flex-basis: 25%;  
+}
+.medaiContainer{
+   flex-basis: 20%;
+   display: flex;
+   flex-direction: column; 
+   
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+      flex-direction: column; 
+}
 .introductionLegalContainer{
     display: flex;
     flex-direction: row;
@@ -13,7 +54,7 @@ flex-basis: 65%;
 flex-basis: 30%;
 }
 .copyWrite{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     text-align: center;
     color: #81858b;
@@ -22,3 +63,44 @@ flex-basis: 30%;
 .partnerContainer{
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 480px) {
+
+    
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+
+    
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+
+    }

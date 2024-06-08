@@ -1,13 +1,12 @@
-import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import localFont from 'next/font/local'
 import { Provider } from 'react-redux'
 import { Store, persistor } from '@/redux/Store'
-import { GET } from '@/repository/FetchRepository'
 import "@/styles/globals.css"
 import Link from 'next/link'
 import { PersistGate } from 'redux-persist/integration/react'
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 
 
@@ -39,5 +38,3 @@ export default function App({ Component, pageProps}) {
     </div> 
   )
 }
-
-

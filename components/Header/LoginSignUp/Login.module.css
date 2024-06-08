@@ -1,0 +1,85 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 560px;
+    border: 1px solid #e0e0e2;
+    border-radius: 7px;
+}
+.loginHeader{
+ margin: 0px auto;
+}
+.logoImage{
+
+}
+.loginContent{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+
+}
+.title{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.sepLine{
+    content: " ";
+    background-color: black;
+    width: 2px;
+    height: 30px;
+    margin: 5px 10px;
+
+}
+.titleText{
+font-size: 28px;
+font-weight: bold;
+}
+.formTitle{
+ display: flex;
+ margin: 50px 10px;
+}
+.formTitleText{
+color: grey;
+font-size: 14px;
+}
+.formContainer{
+
+}
+.form{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.field{
+ border: 1px solid blue;
+ border-radius: 10px;
+ outline: none;
+ color: black;
+ font-size: 12px;
+ width: 300px;
+ height: 50px;
+ margin: 10px 0px;
+}
+.loginButton{
+ border: none;
+ outline: none;
+ color:white;
+ background-color:#ef4056 ;
+ width: 300px;
+ height: 50px;
+ border-radius: 10px;
+}
+.loginFooter{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.footerText{
+font-size: 12px;
+text-align: center;
+color: grey;
+}

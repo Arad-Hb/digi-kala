@@ -1,0 +1,33 @@
+[{
+    "partners":[
+        {"name":"digimag" , "Link":"https://www.digikala.com/mag/"},
+        {"name":"digipay" , "Link":"https://www.mydigipay.com/"},
+        {"name":"digistyle" , "Link":"https://www.digistyle.com/"},
+        {"name":"digiplus" , "Link":"https://www.digikala.com/plus/landing/"},
+        {"name":"digiclub" , "Link":"https://www.digikala.com/users/login/?backUrl=/digiclub/"},
+        {"name":"digijet" , "Link":"https://digikalajet.com/"},
+        {"name":"magnet" , "Link":"https://www.digikala.com/landings/magnet/?utm_source=Digikala_web&utm_medium=Footer"},
+        {"name":"digiMehr" , "Link":"https://www.digikala.com/mehr/"},
+        {"name":"diginext" , "Link":"https://diginext.ir/"},
+        {"name":"digiexpress" , "Link":"https://digiexpress.ir/"},
+        {"name":"ganjeh" , "Link":"https://ganje.net/?utm_source=Digikala_web&utm_medium=Footer"},
+        {"name":"digify" , "Link":"https://digify.shop/"},
+        {"name":"smartech" , "Link":"https://smartech.ir/"},
+        {"name":"digikala-business" , "Link":"https://www.digikalabusiness.com/"},
+        {"name":"digikala-service" , "Link":"https://www.digikala-service.com/"}
+    ]
+        
+},
+{
+    "delivery":[
+        {"name":"expressDelivery" , "text":"تحویل اکسپرس"},
+        {"name":"cash-on-delivery" , "text":"پرداخت در محل"},
+        {"name":"support" , "text":"هفت روز هفته"},
+        {"name":"daysReturn" , "text":"هفت روز ضمانت بازگشت"},
+        {"name":"originalProducts" , "text":"ضمانت اصل بودن کالا"}
+      
+    ]
+        
+}
+    
+]

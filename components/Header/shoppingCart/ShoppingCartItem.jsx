@@ -1,20 +1,20 @@
 import Counter from '@/components/Features/Counter'
 import React from 'react'
-import { useSelector } from 'react-redux'
 import styles from './ShoppingCartItem.module.css'
 import { TbTruckDelivery,TbHomeCheck } from "react-icons/tb"
 import { AiOutlineSafety } from "react-icons/ai"
 import { BiSolidColor } from "react-icons/bi"
 
 
-const ShoppingCartItem = () => {
-    const state=useSelector(state=>state.shoppingReducer)
+const ShoppingCartItem = ({data}) => {
+   
   return (
     <div className={`${styles.outerContainer}`}>
         {
-            state.items.map(item=>{
+            data.items.map(item=>{
                 const itemsTotalPrice=item.price*item.count
-               return <div className={`${styles.shoppingItemContainer}`}>
+
+        return <div className={`${styles.shoppingItemContainer}`}>
                     <div className={`${styles.imageContainer}`}>
                         <img src={item.indexImageUrl} alt={item.name} className={`${styles.image}`}/>
                     </div>

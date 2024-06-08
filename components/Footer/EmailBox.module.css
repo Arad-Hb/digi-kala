@@ -1,0 +1,31 @@
+.outerContainer{
+
+}
+.title{
+font-weight: bold;
+}
+.emailContainer{
+ margin: 10px 5px;
+}
+.emailForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.emailInput{
+background-color: #f0f0f1;
+width:170px ;
+border: none;
+outline: none;
+border-radius: 7px;
+margin: 0px 10px;
+}
+.emailButton{
+background-color: #e0e0e2;
+color: white;
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 7px;
+font-weight: bold;
+}

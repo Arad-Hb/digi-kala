@@ -1,4 +1,4 @@
-.outerContainer{
+.innerContainer{
    display: flex;
    flex-direction: row; 
    text-align: center;
@@ -11,6 +11,7 @@ flex-basis: 60%;
 }
 .paymentContainer{
     flex-basis: 25%;
-    border:1px solid silver;
-    border-radius:7px;
+    display: flex;
+    flex-direction: column;
+
 }
