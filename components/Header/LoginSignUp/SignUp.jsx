@@ -51,7 +51,6 @@ const SignUp = () => {
         <Formik onSubmit={submitHandler} initialValues={formFields} validationSchema={validationSchema} validateOnChange={false} validateOnBlur={false}>
                 <Form>
                     <div className={`${styles.fieldsContainer}`}>
-                        
                         <Field className={`${styles.field}`} type="text" name="username" placeholder="شماره موبایل" />
                         <ErrorMessage name="username" component={UsersErrorMessage} />
                         <Field className={`${styles.field}`} type="password" name="password" placeholder="رمز عبور" />

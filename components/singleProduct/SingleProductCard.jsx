@@ -10,7 +10,7 @@ const SingleProductCard = ({data}) => {
         <div className={`${styles.catalogueContainer}`}>
             <div className={`${styles.imageContainer}`}><ProductImage data={data}/></div>
             <div className={`${styles.detailsContainer}`}>
-              <div className={`${styles.productName}`}><h3>{data.name}</h3></div>
+              <div className={`${styles.productName}`}>{data.name}</div>
               <div className={`${styles.productDetails}`}>
                 <div className={`${styles.describtion}`}><ProductDetails data={data}/></div>
                 <div className={`${styles.orderCard}`}><OrderCard data={data}/></div>

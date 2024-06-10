@@ -15,13 +15,11 @@ export default function Home(props) {
   
   return (
     <div className={`${styles.Home}`}>
-      
       <Context.Provider value={{mainSliderImages:props.SliderImages,digiIcons:props.digiIcons,incOfferProducts:props.incOfferProducts}}>
           <div className={`${styles.mainSlider}`}><MainSlider/></div>
           <div className={`${styles.digiIcons}`}><DigiIcons data={props.digiIcons}/></div>
           <div className={`${styles.incredibleOffer}`}><IncredibleOffer data={props.incOfferProducts}/></div>
       </Context.Provider>
-      
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.outerContainer{
+    display: flex;
+}
+.descriptionContainer{
+
+}
+.littleArticle{
+font-size: 14px;
+color: #81858b;
+line-height: -1px;
+letter-spacing: -1px;
+}
+.articleButton{
+ color: rgb(73, 73, 241);
+ font-weight: bold;
+ font-size: 12px;
+ margin: 0px 5px;
+}
+.articleButton:hover{
+    color: red;
+}
+.totalArticle{
+    font-size: 14px;
+    color: #81858b;
+    line-height: -1px;
+    letter-spacing: -1px;
+}

@@ -1,0 +1,13 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+
+}
+.mainContent{
+ margin: 30px 10px;
+}
+.footer{
+
+}

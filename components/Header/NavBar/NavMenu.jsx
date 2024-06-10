@@ -23,7 +23,7 @@ const menuContentContainerStyles={
         </div>
         <div style={menuContentContainerStyles}  className={`${styles.menuContentContainer}`} onMouseLeave={()=>{setDisplay("none")}}>
           <div className={`${styles.menuSideBar}`}><MenuSideBar /></div>
-          <div className={`${styles.menuContent}`}><MenuContent /></div>
+          <div className={`${styles.menuContent}`} onClick={()=>{setDisplay("none")}}><MenuContent /></div>
         </div>
     </div>
     

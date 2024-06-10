@@ -1,0 +1,32 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.originalImageContainer{
+
+}
+.originalImage{
+  height: auto;
+  border-radius: 14px;
+ 
+}
+.ThumbnailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.Thumbnails{
+    border: 1px solid #e0e0e2;
+    border-radius: 14px;
+    margin: 0px 10px;
+}
+.ThumbnailImage:hover{
+    padding: 2px;
+    transition: all .2s;
+}
+.ThumbnailImage{
+ padding: 5px;
+ border-radius: 14px;
+}

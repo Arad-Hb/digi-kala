@@ -1,0 +1,101 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.price{
+ display: flex;
+ flex-direction: row;
+
+}
+.priceIcon{
+color: rgb(81, 89, 203);
+font-size: 26px;
+}
+.priceText{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.priceNumber{
+    font-size: 14px;
+    font-weight: bold;
+}
+.priceContainer{
+
+}
+.priceWithAndWithoutOffContainer{
+
+}
+.priceWithoutOff{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.priceWithoutOffIcon{
+ color: rgb(81, 89, 203);
+ font-size: 26px;
+}
+.priceWithoutOffText{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.priceWithoutOffNumber{
+    font-size: 14px;
+    font-weight: bold;
+}
+.priceWithOff{
+display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.priceWithOffIcon{
+    color: rgb(25, 181, 33);
+    font-size: 26px;
+}
+.priceWithOffText{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.priceWithOffNumber{
+    font-size: 14px;
+    font-weight: bold;
+}
+.offPrcent{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.offPrcentIcon{
+    color: rgb(235, 10, 10);
+    font-size: 26px;
+}
+.offPrcentText{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.offPrcentNumber{
+    font-size: 14px;
+    font-weight: bold;
+}
+.profit{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.profitIcon{
+ color: goldenrod;
+ font-size: 26px;
+}
+.profitText{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.profitNumber{
+    font-size: 14px;
+    font-weight: bold;
+}

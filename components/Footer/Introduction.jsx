@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import IntroductionTotalArticle from './IntroductionTotalArticle'
 import IntroductionLittleArticle from './IntroductionLittleArticle'
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io"
 import styles from './Introduction.module.css'
 
 const Introduction = () => {

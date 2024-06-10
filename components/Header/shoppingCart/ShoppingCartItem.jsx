@@ -4,10 +4,14 @@ import styles from './ShoppingCartItem.module.css'
 import { TbTruckDelivery,TbHomeCheck } from "react-icons/tb"
 import { AiOutlineSafety } from "react-icons/ai"
 import { BiSolidColor } from "react-icons/bi"
+import { useRouter } from 'next/router'
 
 
 const ShoppingCartItem = ({data}) => {
-   
+   const router=useRouter()
+   const clickHandler=(id)=>{
+    router.push(`/products/singelProduct/${id}`)
+   }
   return (
     <div className={`${styles.outerContainer}`}>
         {
@@ -15,7 +19,7 @@ const ShoppingCartItem = ({data}) => {
                 const itemsTotalPrice=item.price*item.count
 
         return <div className={`${styles.shoppingItemContainer}`}>
-                    <div className={`${styles.imageContainer}`}>
+                    <div className={`${styles.imageContainer}`} onClick={()=>clickHandler(item.id)}>
                         <img src={item.indexImageUrl} alt={item.name} className={`${styles.image}`}/>
                     </div>
                     <div className={`${styles.describtionContainer}`}>

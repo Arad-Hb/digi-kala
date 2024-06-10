@@ -1,23 +1,18 @@
-import AddButton from '@/components/Features/AddButton'
-import Counter from '@/components/Features/Counter'
-import OutOfStockButton from '@/components/Features/OutOfStockButton'
+
 import { GET } from '@/repository/FetchRepository'
 import React from 'react'
 import styles from './[ProductDetail].module.css'
-import { useSelector } from 'react-redux'
 import SingleProductHeader from '@/components/singleProduct/SingleProductHeader'
 import SingleProductCard from '@/components/singleProduct/SingleProductCard'
+import Carusel from '@/components/carusel/Carusel'
 
-const ProductDetail = ({selectedItem}) => {
-  const state= useSelector(state=>state.shoppingReducer)
+const ProductDetail = (props) => {
+  
   return (
     <div className={`${styles.outerContainer}`}>
-        <div className={`${styles.header}`}><SingleProductHeader data={selectedItem}/></div>
-        <div className={`${styles.mainContent}`}><SingleProductCard data={selectedItem}/></div>
-        <div className={`${styles.footer}`}></div>
-        {
-           state.items.find(item=>item.id==selectedItem.id)?<Counter data={selectedItem}/>:selectedItem.stock!==0?<AddButton data={selectedItem}/>:<OutOfStockButton/>
-        }
+        <div className={`${styles.header}`}><SingleProductHeader data={props.selectedItem}/></div>
+        <div className={`${styles.mainContent}`}><SingleProductCard data={props.selectedItem}/></div>
+        <div className={`${styles.footer}`}><Carusel cardsCount={7} data={props.similarOffers}/></div>
     </div>
   )
 }
@@ -27,13 +22,16 @@ export default ProductDetail
 export async function getServerSideProps(context){
 
     const selectedItemId=context.params.ProductDetail
-    const response=await GET(`products/${selectedItemId}`)
-    const result=await response.json()
-  
-    
+    const singleProductResponse=await GET(`products/${selectedItemId}`)
+    const singleProductResult=await singleProductResponse.json()
+
+    const productCategoryResponse=await GET(`products/search/${selectedItemId}`)
+    const productCategoryResult=await productCategoryResponse.json()
+
     return{
         props:{
-            selectedItem:result
+            selectedItem:singleProductResult,
+            similarOffers:productCategoryResult
         }
     }
 }

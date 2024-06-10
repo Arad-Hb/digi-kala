@@ -6,9 +6,10 @@
     width:80px;
     height: 30px;
     border:1px solid silver;
-    border-radius: 12px;
-    color: red;
+    border-radius: 8px;
+    color: #ee384e;
     font-weight: bold;
+    background-color: white;
 }
 .counterLabel{
 
@@ -16,6 +17,5 @@
 .counterButton{
  border: none;
  outline: none;
-background-color: white;
-color: red;
+
 }

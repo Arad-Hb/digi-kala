@@ -1,0 +1,163 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background-color:#f6f6f7 ;
+    border: 1px solid #e0e0e2;
+    border-radius: 14px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.sellerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title{
+font-weight: bold;
+}
+.otherSellers{
+font-size: 14px;
+color: blue;
+}
+.sellerIntroduce{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.sellerLogo{
+
+}
+.sellerName{
+color: #454e7c;
+margin: 0px 10px;
+}
+.seperator{
+content: "";
+background-color: #e0e0e2;
+width: 85%;
+height: 1px;
+margin: 10px auto;
+}
+.mainContent{
+display: flex;
+flex-direction: column;
+margin: 10px 10px;
+}
+.priceContainer{
+display: flex;
+flex-direction: column;
+}
+.priceDetails{
+
+}
+.priceWithAndWithoutDiscount{
+    display: flex;
+    flex-direction: column;
+}
+.priceBeforeOff{
+color: grey;
+font-size: 12px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+font-weight: bold;
+}
+.priceWithoutDiscount{
+    text-decoration-line: line-through;
+    text-decoration-color: #ee384e;
+    text-decoration-thickness: 0.1px;
+}
+.offPrcent{
+background-color: #ee384e;
+color: white;
+border-radius: 10px;
+padding: 2px;
+
+}
+.priceWithDiscount{
+margin: 10px auto;
+font-size: 18px;
+font-weight: bold;
+
+}
+.addButton{
+    margin: 10px auto;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.guarantee{
+display: flex;
+flex-direction: row;
+margin: 10px;
+align-items: center;
+font-weight: bold;
+color: grey;
+}
+.guaranteeIcon{
+font-size: 20px;
+}
+.guaranteeText{
+    font-size: 14px;
+    margin: 0px 5px;
+}
+.deliveryContainer{
+display: flex;
+flex-direction: column;
+margin: 10px;
+font-weight: bold;
+}
+.delivery{
+
+}
+.deliveryIcon{
+    font-size: 20px;
+color:blue;
+}
+.deliveryText{
+font-size: 14px;
+margin: 0px 5px;
+}
+.fastDelivery{
+
+}
+.fastDeliveryIcon{
+    font-size: 20px;
+    color: #ee384e;
+}
+.fastDeliveryText{
+font-size: 14px;
+margin: 0px 5px;
+}
+.digiClub{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 8px;
+ font-weight: bold;
+}
+.digiClubTitle{
+
+}
+.clubIcon{
+
+}
+.clubImage{
+
+}
+.titleText{
+    font-size: 14px;
+    margin: 0px 10px;
+}
+.infoIcon{
+
+}
+.digiClubPoint{
+    font-size: 14px;
+}

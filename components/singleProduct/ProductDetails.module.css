@@ -1,0 +1,44 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.stockContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stockIcon{
+ font-size: 26px;
+ color: rgb(117, 46, 20);
+}
+.stockNumber{
+font-size: 14px;
+font-weight: bold;
+margin: 0px 10px;
+}
+.priceContainer{
+   
+}
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+}
+.descriptionTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.descriptionIcon{
+ font-size: 26px;
+ color: rgb(189, 32, 204);
+}
+
+.descriptionText{
+ font-size: 14px;
+ font-weight: bold;
+ margin: 0px 10px;
+}
+.descriptionComponent{
+ margin: 5px 10px;
+}

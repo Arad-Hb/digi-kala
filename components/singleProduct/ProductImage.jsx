@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './ProductImage.module.css'
 import Image from 'next/image'
-import ProductThumbnails from './ProductThumbnails'
+
 
 const ProductImage = ({data}) => {
+  const [imageToShow,setImageToShow]=useState(data.indexImageUrl)
+
   return (
-    <div>
-        <div style={{ width: '500px', height: 'auto' }}>
-        <Image src={data.indexImageUrl} alt={data.name} className='' width={500} height={0} style={{  height: 'auto' }}/>
+    <div className={`${styles.outerContainer}`}>
+        <div className={`${styles.originalImageContainer}`}>
+          <Image src={imageToShow} alt={data.name} className={`${styles.originalImage}`} width={400} height={0}/>
         </div>
-        <div>
-            {
-            data.images?<ProductThumbnails data={data}/>:null
-            }
+        <div className={`${styles.ThumbnailsContainer}`}>
+            {data.images?(data.images.map(item=>{
+              return(
+                <div onClick={()=>setImageToShow(item.original)} className={`${styles.Thumbnails}`}>
+                  <Image src={item.thumbnail} alt='thumbnails' width={80} height={80} className={`${styles.ThumbnailImage}`}/>
+                </div>
+              )
+            })
+              ):null}
         </div>
     </div>
 
