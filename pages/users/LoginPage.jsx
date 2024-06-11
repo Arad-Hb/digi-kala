@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './LoginPage.module.css'
-import Login from '../../components/Header/LoginSignUp/Login'
-import SignUp from '@/components/Header/LoginSignUp/SignUp'
+import LoginAndSignUp from '@/components/Header/LoginSignUp/LoginAndSignUp'
+
 
 const LoginPage = () => {
 
   return (
-    <div className={`${styles.loginContainer}`}><SignUp/></div>
+    <div className={`${styles.loginContainer}`}><LoginAndSignUp/></div>
   )
 }
 

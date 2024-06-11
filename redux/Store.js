@@ -16,7 +16,7 @@ const configuration = {
 const rootReducer = combineReducers({
     counterReducer:CounterSlice,
     shoppingReducer:shoppingCartSlice,
-    usersReducer:UsersSlice,
+    userReducer:UsersSlice,
     menuReducer:menuSlice
 })
 

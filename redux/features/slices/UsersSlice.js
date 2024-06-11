@@ -1,6 +1,6 @@
 const { createSlice } = require("@reduxjs/toolkit")
 
-const INITIAL_STATE = { token: '' }
+const INITIAL_STATE = { firstName:" ",lastName:" ",age:0,mobile:0,token: '' }
 
 const usersSlice = createSlice({
     name: 'user',
@@ -11,10 +11,16 @@ const usersSlice = createSlice({
         },
         removeJwtToken(state) {
             state.token = ''
+        },
+        setUserData(state,action) {
+            state.firstName = action.payload.firstName
+            state.lastName = action.payload.lastName
+            state.age = action.payload.age
+            state.mobile = action.payload.mobile
         }
 
     }
 })
 
-export const {setJwtToken , removeJwtToken} = usersSlice.actions
+export const {setJwtToken , removeJwtToken,setUserData} = usersSlice.actions
 export default usersSlice.reducer

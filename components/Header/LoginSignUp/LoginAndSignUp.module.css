@@ -1,0 +1,66 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.contentContainer{
+flex-basis: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.contentHeader{
+
+}
+.contentForm{
+
+}
+.buttonContainer{
+flex-basis: 50%;
+
+display: flex;
+flex-direction: column;
+background: rgb(238,56,78);
+background: radial-gradient(circle, rgba(238,56,78,1) 0%, rgba(142,27,27,1) 100%);
+}
+.buttonHeader{
+   font-size: 80px;
+   font-weight: 900;
+   color: white;
+   margin: 30px auto;
+}
+.buttonContent{
+    align-items: right;
+    display: flex;
+    flex-direction: column; 
+    margin: 200px 0px;
+}
+.inactiveButton{
+ width: 200px;
+ height: 60px;
+ font-size: 32px;
+ font-weight: 800;
+ color: white;
+padding-right:20px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.activeButton{
+    width: 200px;
+    height: 60px;
+    font-size: 32px;
+    font-weight: 800;
+    background-color: white;
+    color: #ee384e;
+    padding-right:20px;
+    border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.bg{
+    background-image: url('/images/digikalaLoginLogo.webp');
+background-size:contain;
+background-repeat: no-repeat;
+}

@@ -16,8 +16,7 @@ const ShoppingCartItem = ({data}) => {
     <div className={`${styles.outerContainer}`}>
         {
             data.items.map(item=>{
-                const itemsTotalPrice=item.price*item.count
-
+               
         return <div className={`${styles.shoppingItemContainer}`}>
                     <div className={`${styles.imageContainer}`} onClick={()=>clickHandler(item.id)}>
                         <img src={item.indexImageUrl} alt={item.name} className={`${styles.image}`}/>
@@ -47,7 +46,11 @@ const ShoppingCartItem = ({data}) => {
                         <div className={`${styles.counterContainer}`}>
                             <div className={`${styles.itemsCounter}`}><Counter data={item}/></div>
                             <div className={`${styles.itemsTotalPrice}`}>
-                                <label>{itemsTotalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</label>
+                                <label>
+                                    {item.priceWithDiscount === 0 ? (
+                                    Math.floor(item.price*item.count).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")):(
+                                    Math.floor(item.priceWithDiscount*item.count).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))} تومان
+                                </label>
                             </div>
                         </div>
                     </div>

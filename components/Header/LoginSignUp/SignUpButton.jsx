@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './Profile.module.css'
+import styles from './SignUpButton.module.css'
 import Link from 'next/link'
 import { CgEnter } from 'react-icons/cg'
 
-const Profile = () => {
+const SignUpButton = () => {
 
   return (
     <div className={`${styles.profileContainer}`}>
@@ -17,4 +17,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default SignUpButton

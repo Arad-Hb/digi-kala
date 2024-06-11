@@ -1,13 +1,14 @@
 import React from 'react'
-import styles from './Login.module.css'
+import styles from './SignUp.module.css'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 import * as Yup from 'yup'
 import { POST } from '@/repository/AxiosRepository'
-import { setJwtToken } from '@/redux/features/slices/UsersSlice'
+import { setJwtToken ,setUserData} from '@/redux/features/slices/UsersSlice'
 import Image from 'next/image'
 import UsersErrorMessage from '@/components/Header/LoginSignUp/UsersErrorMessage'
+import Link from 'next/link'
 
 const SignUp = () => {
     const dispatch = useDispatch()
@@ -19,23 +20,34 @@ const SignUp = () => {
     })
 
     const formFields = {
+        firstName:'',
+        lastName:'',
+        age:'',
+        mobile:'',
         username: '',
         password: ''
     }
 
     const submitHandler = (values) => {
-
-        POST("users/register", values)
+        const Username=values.username
+        const Password=values.password
+        const data={username:Username,password:Password}
+        console.log(data);
+        console.log(values);
+        POST("users/register", data)
         .then(response => {
             if (response.data.id === 0) {
-                alert("user exists!!!")
+                alert("نام کاربری یا رمز عبور تکراریست!!!!!!")
             }
             else {
-                POST("users/login", values)
+                POST("users/login", data)
                     .then(loginResponse => {
+                        alert("ثبت نام با موفقیت انجام شد.")
                        dispatch(setJwtToken(loginResponse.data.token))
+                       dispatch(setUserData(values))
                        //Cookies.set('jwt', response.data.token)
                         router.push("/LandingPage")
+
                     })
             }
         })
@@ -45,13 +57,24 @@ const SignUp = () => {
             
     }
   return (
-    <div>
-    
-        <div><Image src="/images/logo.svg" width={150} height={100} alt='logo'/></div>
-        <Formik onSubmit={submitHandler} initialValues={formFields} validationSchema={validationSchema} validateOnChange={false} validateOnBlur={false}>
+    <div className={`${styles.outerContainer}`}>
+        <div className={`${styles.loginContent}`}>
+          <div className={`${styles.title}`}>
+            <span className={`${styles.titleText}`}>ثبت نام</span>
+          </div>
+          <div className={`${styles.formContainer}`}>
+          <Formik onSubmit={submitHandler} initialValues={formFields} validationSchema={validationSchema} validateOnChange={false} validateOnBlur={false}>
                 <Form>
                     <div className={`${styles.fieldsContainer}`}>
-                        <Field className={`${styles.field}`} type="text" name="username" placeholder="شماره موبایل" />
+                        <Field className={`${styles.field}`} type="text" name="firstName" placeholder="نام" />
+                        <ErrorMessage name="username" component={UsersErrorMessage} />
+                        <Field className={`${styles.field}`} type="text" name="lastName" placeholder="نام خانوادگی" />
+                        <ErrorMessage name="username" component={UsersErrorMessage} />
+                        <Field className={`${styles.field}`} type="text" name="age" placeholder="سن" />
+                        <ErrorMessage name="username" component={UsersErrorMessage} />
+                        <Field className={`${styles.field}`} type="text" name="mobile" placeholder="شماره موبایل" />
+                        <ErrorMessage name="username" component={UsersErrorMessage} />
+                        <Field className={`${styles.field}`} type="text" name="username" placeholder="نام کاربری" />
                         <ErrorMessage name="username" component={UsersErrorMessage} />
                         <Field className={`${styles.field}`} type="password" name="password" placeholder="رمز عبور" />
                         <ErrorMessage name="password" component={UsersErrorMessage} />
@@ -59,6 +82,11 @@ const SignUp = () => {
                     </div>
                 </Form>
             </Formik>
+          </div>
+        </div>
+        <div className={`${styles.loginFooter}`}>
+          <span className={`${styles.footerText}`}>ورود شما به معنای پذیرش شرایط دیجی کالا و قوانین حریم خصوصی است</span>
+        </div>
     </div>
   )
 }

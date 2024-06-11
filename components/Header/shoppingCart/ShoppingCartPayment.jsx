@@ -4,18 +4,17 @@ import styles from './ShoppingCartPayment.module.css'
 import { ImInfo } from "react-icons/im"
 
 const ShoppingCartPayment = ({data}) => {
-    
     const totalPrices=data.totalPrices
     const totalAmount=data.totalAmount
   return (
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.payments}`}>
             <label className={`${styles.paymentsLabel}`}>
-                <span>قیمت کالاها</span>
-                <span>{totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</span>
+                <span>قیمت کل کالاها</span>
+                <span>{totalPrices.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</span>
             </label>
             <label className={`${styles.paymentsLabel}`}>
-                <span>جمع سبد خرید</span>
+                <span>مبلغ قابل پرداخت</span>
                 <span>{totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  تومان</span>
             </label>
         </div>

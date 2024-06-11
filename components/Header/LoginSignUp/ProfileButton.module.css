@@ -1,0 +1,43 @@
+.outerContainer{
+    display: flex;
+   
+}
+.userButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 1px solid #e0e0e2;
+    border-radius: 7px;
+}
+.userButton:hover{
+    background-color: white;
+    color: black;
+    outline: none;
+}
+.userIcon{
+ margin: 0px 10px;
+}
+
+.userContent{
+width: 250px;
+border: none;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.userName{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+font-size: 14px;
+font-weight: bold;
+padding: 15px 10px;
+}
+.nameText{
+
+}
+.nameIcon{
+
+}
+

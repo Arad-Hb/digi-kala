@@ -5,41 +5,29 @@
     width: 400px;
     height: 560px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 
-}
-.loginHeader{
- margin: 0px auto;
-}
-.logoImage{
 
-}
 .loginContent{
     display: flex;
     flex-direction: column;
-    margin: 0px 10px;
+    padding: 10px 50px;
 
 }
 .title{
     display: flex;
     flex-direction: row;
-color: #ee384e;
-
+    color: #ee384e;
 }
-.sepLine{
-    content: " ";
-    background-color: #ee384e;
-    width: 2px;
-    height: 30px;
-    margin: 5px 10px;
 
-}
 .titleText{
 font-size: 28px;
 font-weight: bold;
+padding-bottom: 10px;
 }
 .formTitle{
  display: flex;
- margin: 50px 10px;
+ margin: 20px 10px;
 }
 .formTitleText{
 color: grey;
@@ -55,20 +43,20 @@ font-size: 14px;
  align-items: center;
 }
 .field{
-    border: 1px solid #e2e2e2;
+border: 1px solid #e2e2e2;
  border-radius: 10px;
  outline: none;
  color: black;
  font-size: 12px;
  width: 300px;
  height: 50px;
- margin: 10px 0px;
+ margin: 5px 0px;
 }
 .loginButton{
  border: none;
  outline: none;
  color:white;
- background-color:#ee384e ;
+ background-color:#ee384e;
  width: 300px;
  height: 50px;
  border-radius: 10px;
@@ -76,7 +64,7 @@ font-size: 14px;
 .loginFooter{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 5px 0px;
 }
 .footerText{
 font-size: 12px;

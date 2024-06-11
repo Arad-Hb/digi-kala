@@ -52,7 +52,7 @@ const Card = ({product}) => {
           
 
         )}
-        <div>
+        <div className={`${styles.addButton}`}>
           {
             state.items.find(item=>item.id==product.id)?<Counter data={product}/>:product.stock!==0?<AddButton data={product}/>:<OutOfStockButton/>
           }
