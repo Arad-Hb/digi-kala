@@ -5,6 +5,7 @@ import { TbTruckDelivery,TbHomeCheck } from "react-icons/tb"
 import { AiOutlineSafety } from "react-icons/ai"
 import { BiSolidColor } from "react-icons/bi"
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 
 const ShoppingCartItem = ({data}) => {
@@ -19,7 +20,7 @@ const ShoppingCartItem = ({data}) => {
                
         return <div className={`${styles.shoppingItemContainer}`}>
                     <div className={`${styles.imageContainer}`} onClick={()=>clickHandler(item.id)}>
-                        <img src={item.indexImageUrl} alt={item.name} className={`${styles.image}`}/>
+                        <Image src={item.indexImageUrl} alt={item.name} width={200} height={0} className={`${styles.indexImage}`}/>
                     </div>
                     <div className={`${styles.describtionContainer}`}>
                         <div className={`${styles.itemsNameContainer}`}>

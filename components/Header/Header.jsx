@@ -8,10 +8,13 @@ import SignUpButton from './LoginSignUp/SignUpButton'
 import ShoppingCartIcon from './shoppingCart/ShoppingCartIcon'
 import ProfileButton from './LoginSignUp/ProfileButton'
 import { useSelector } from 'react-redux'
+import Cookies from 'js-cookie'
 
 
 const Header = () => {
 const userState=useSelector(state=>state.userReducer)
+const userLogedIn=Cookies.get()
+
   return (
     <div className={`${styles.headerContainer}`}>
       <div className={`${styles.topBannerRow}`}><TopBanner/></div>
@@ -23,7 +26,7 @@ const userState=useSelector(state=>state.userReducer)
         <div className={`${styles.profileShoppingContainer}`}>
           <div className={`${styles.profileContainer}`}>
             {
-              userState.token?<ProfileButton data={userState}/>:<SignUpButton/>
+              userLogedIn.jwt?<ProfileButton data={userLogedIn}/>:<SignUpButton/>
             }
             </div>
           <div className={`${styles.sepLine}`}></div>

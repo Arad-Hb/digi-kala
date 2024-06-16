@@ -19,7 +19,7 @@ const Carusel = (props) => {
         centerPadding: "1em",
         swipeToSlide: true,
         rtl: true,
-        slidesToShow: 4,
+        slidesToShow: 7,
         slidesToScroll: 1,
         nextArrow: <NextArrow width="30px" height="30px" />,
         prevArrow: <PrevArrow width="30px" height="30px" />,

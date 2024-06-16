@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Profile.module.css'
 import { useSelector } from 'react-redux'
 import AcountDetails from './AcountDetails'
 import Image from 'next/image'
+import Cookies from 'js-cookie'
 
 const Profile = () => {
   const userState=useSelector(state=>state.userReducer)
+  const user=Cookies.get()
+  
   return (
     <div className={`${styles.outerContainer}`}>
       <div className={`${styles.sideBar}`}>
         <div className={`${styles.personalInformations}`}>
           <div className={`${styles.information}`}>
-            <span className={`${styles.name}`}>{userState.firstName}  {userState.lastName}</span>
-            <span className={`${styles.mobile}`}>{userState.mobile}</span>
+            <span className={`${styles.name}`}>{user.name}  {user.lastName}</span>
+            <span className={`${styles.mobile}`}>{user.mobile}</span>
           </div>
         </div>
         <div className={`${styles.details}`}><AcountDetails/></div>

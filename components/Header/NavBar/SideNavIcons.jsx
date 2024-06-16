@@ -12,12 +12,10 @@ import { MdOutlineSmartToy } from "react-icons/md"
 import { BiWrench } from "react-icons/bi"
 import { IoCarSportOutline } from "react-icons/io5"
 
-const SideNavIcons = (props) => {
-    const iconsArrey=[]
-    const findIcon=()=>{
+const SideNavIcons = ({data}) => {
+   
 
-    }
- const data=props.icon
+
   return 
 }
 

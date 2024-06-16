@@ -16,7 +16,7 @@ const ProfileButton = ({data}) => {
       </Dropdown.Toggle>
       <Dropdown.Menu className={`${styles.userContent}`}>
         <Dropdown.Item href="/dashboard/ProfilePage" className={`${styles.userName}`}>
-          <span className={`${styles.nameText}`}>{data.firstName} {data.lastName}</span>
+          <span className={`${styles.nameText}`}>{data.name} {data.lastName}</span>
           <span className={`${styles.nameIcon}`}><IoIosArrowBack /></span>
         </Dropdown.Item>
         <AcountDetails/>

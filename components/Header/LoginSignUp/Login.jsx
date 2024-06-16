@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Login.module.css'
 import Image from 'next/image'
 import UsersErrorMessage from './UsersErrorMessage'
@@ -8,6 +8,7 @@ import { POST } from '../../../repository/AxiosRepository'
 import { useDispatch } from 'react-redux'
 import { setJwtToken } from '@/redux/features/slices/UsersSlice'
 import { useRouter } from 'next/router'
+import Cookies from 'js-cookie'
 
 const Login = () => {
   const dispatch=useDispatch()
@@ -27,8 +28,8 @@ const submitHandler = (values) => {
             .then(response => {
               
                 if (response.data.hasOwnProperty("token")) {
-                    dispatch(setJwtToken(response.data.token))
-                    //Cookies.set('jwt', response.data.token , { expires: 70, path: '/admin' })
+                    //dispatch(setJwtToken(response.data.token))
+                    Cookies.set('jwt', response.data.token , { expires: 70 })
                     router.push("/dashboard/ProfilePage")
                 }
                 else {

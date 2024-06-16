@@ -5,9 +5,9 @@ import { Store, persistor } from '@/redux/Store'
 import "@/styles/globals.css"
 import Link from 'next/link'
 import { PersistGate } from 'redux-persist/integration/react'
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import Loading from '@/components/Features/Loading'
+import LoadingComponent from '@/components/Features/LoadingComponent'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
 
 
@@ -29,18 +29,18 @@ export default function App({ Component, pageProps}) {
 
   return(
 
-  <div  className={iranSansFont.className }>
-   
+<div className={iranSansFont.className }>
       <Provider store={Store}>
-      <PersistGate loading={<Loading/>} persistor={persistor}>
-        <Header/>
-        <Component {...pageProps} />
-        <Footer/>
-      </PersistGate>
-    </Provider>
+        <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
+          <Header/>
+          <Component {...pageProps} />
+          <Footer/>
+        </PersistGate>
+      </Provider>
       <Link href={'/'}>back to home</Link>
-  
-    
   </div> 
   )
 }
+
+
+

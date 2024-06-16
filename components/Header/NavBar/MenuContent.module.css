@@ -21,18 +21,7 @@ font-size: 14px;
 font-weight: bold;
 margin: 10px 20px;
 }
-.headerTitle{
 
-}
-.staticText{
-
-}
-.dynamicText{
- 
-}
-.headerIcon{
-
-}
 .itemsContainer{
     display: flex;
     flex-direction: column;
@@ -50,12 +39,7 @@ margin: 10px 20px;
  color: red;
  font-size: 18px;
 }
-.text{
 
-}
-.titleIcon{
- 
-}
 .itemContainer{
     display: flex;
     flex-direction: column;

@@ -5,21 +5,42 @@ import Data from '../../../files/menuData.json'
 import SideNavIcons from './SideNavIcons'
 import { useDispatch } from 'react-redux'
 import { addId } from '@/redux/features/slices/menuSlice'
+import { CiMobile3 } from "react-icons/ci"
+import { LuPencilRuler } from "react-icons/lu"
+import { LiaLaptopSolid,LiaNotesMedicalSolid } from "react-icons/lia"
+import { RiSofaLine, RiShoppingBasketLine} from "react-icons/ri"
+import { CgSmartHomeRefrigerator } from "react-icons/cg"
+import { PiTShirtLight } from "react-icons/pi"
+import { GiEmeraldNecklace } from "react-icons/gi"
+import { TbHeartCheck,TbGiftCard ,TbBrandReactNative} from "react-icons/tb"
+import { FaCampground } from "react-icons/fa"
+import { MdOutlineSmartToy } from "react-icons/md"
+import { BiWrench } from "react-icons/bi"
+import { IoCarSportOutline } from "react-icons/io5"
+import {
+    MdOutlinePhone,
+    MdOutlineFavorite,
+    MdOutlineContactPhone,
+  } from "react-icons/md"
+
+
 
 
 const MenuSideBar = () => {
     const dispatch=useDispatch()
-    const data=Data[0]
-
+ 
+    const menuData=Data[0].sideNav
+    
+   
   return (
     <div className={`${styles.outerContainer}`}>
         {
-            data.sideNav.map(item=>{
+            menuData.map(item=>{
             
                 return(
                     <div className={`${styles.categoryContainer}`}>
                         <Link href={""} className={`${styles.link}`} onMouseOver={()=>dispatch(addId(item.id))}>
-                            <span className={`${styles.icon}`}><SideNavIcons icon={item.icon}/></span>
+                            <span className={`${styles.icon}`}></span>
                             <span className={`${styles.text}`}>{item.name}</span>
                         </Link>
                     </div>

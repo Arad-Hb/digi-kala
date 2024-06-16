@@ -4,15 +4,18 @@ import axios from 'axios'
 import Image from 'next/image'
 import styles from './TopBanner.module.css'
 import { GET } from '@/repository/AxiosRepository'
-import Context from '@/ContextAPI/Context'
+import { useSelector } from 'react-redux'
 
 
-const TopBanner = (props) => {
-  const data=props.data
-   
+
+const TopBanner = () => {
+
+  const state= useSelector(state=>state.staticImagesReducer)
+ 
+
   return (
     <div className={`${styles.topBannerContainer}`} >
-        <Image className={`${styles.topBannerImage}`} src={"https://dkstatics-public.digikala.com/digikala-adservice-banners/0549aba3199baca6511d402fac24cbcc9e448bae_1668975461.jpg?x-oss-process=image/quality,q_95"} alt='top banner' fill />
+        <Image className={`${styles.topBannerImage}`} src={state.topBanner.imageUrl} alt='top banner' fill />
     </div>
   )
 }

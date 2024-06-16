@@ -10,12 +10,17 @@ import { PiStarFour } from "react-icons/pi"
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 import { removeJwtToken } from '@/redux/features/slices/UsersSlice'
+import Cookies from 'js-cookie'
 
 const AcountDetails = () => {
     const router=useRouter()
     const dispatch=useDispatch()
     const logOutHandler=()=>{
-        dispatch(removeJwtToken())
+        //dispatch(removeJwtToken())
+        Cookies.remove('jwt')
+        Cookies.remove('name')
+        Cookies.remove('lastName')
+        Cookies.remove('mobile')
         return(
            router.push("/")
        

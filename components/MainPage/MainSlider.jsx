@@ -1,14 +1,13 @@
-import Context from '@/ContextAPI/Context'
 import React, { useContext } from 'react'
 import "react-image-gallery/styles/css/image-gallery.css"
 import ReactImageGallery from 'react-image-gallery'
 
-const MainSlider = () => {
-  const {mainSliderImages}=useContext(Context)
+const MainSlider = ({data}) => {
+ 
   return (
     <div>
       <ReactImageGallery 
-     items={mainSliderImages}
+     items={data}
      autoPlay={true}
      slideInterval={3000}
      lazyLoad={true}

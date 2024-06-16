@@ -9,6 +9,7 @@ import { setJwtToken ,setUserData} from '@/redux/features/slices/UsersSlice'
 import Image from 'next/image'
 import UsersErrorMessage from '@/components/Header/LoginSignUp/UsersErrorMessage'
 import Link from 'next/link'
+import Cookies from 'js-cookie'
 
 const SignUp = () => {
     const dispatch = useDispatch()
@@ -32,8 +33,7 @@ const SignUp = () => {
         const Username=values.username
         const Password=values.password
         const data={username:Username,password:Password}
-        console.log(data);
-        console.log(values);
+
         POST("users/register", data)
         .then(response => {
             if (response.data.id === 0) {
@@ -43,9 +43,12 @@ const SignUp = () => {
                 POST("users/login", data)
                     .then(loginResponse => {
                         alert("ثبت نام با موفقیت انجام شد.")
-                       dispatch(setJwtToken(loginResponse.data.token))
-                       dispatch(setUserData(values))
-                       //Cookies.set('jwt', response.data.token)
+                       //dispatch(setJwtToken(loginResponse.data.token))
+                       //dispatch(setUserData(values))
+                        Cookies.set('jwt', loginResponse.data.token)
+                        Cookies.set('name', values.firstName)
+                        Cookies.set('lastName', values.lastName)
+                        Cookies.set('mobile', values.mobile)
                         router.push("/LandingPage")
 
                     })
