@@ -19,7 +19,7 @@ const Carusel = (props) => {
         centerPadding: "1em",
         swipeToSlide: true,
         rtl: true,
-        slidesToShow: 7,
+        slidesToShow: 6,
         slidesToScroll: 1,
         nextArrow: <NextArrow width="30px" height="30px" />,
         prevArrow: <PrevArrow width="30px" height="30px" />,
@@ -47,17 +47,17 @@ const Carusel = (props) => {
           {
             breakpoint: 680,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
-              centerPadding: "30px",
+              centerPadding: "20px",
             },
           },
           {
             breakpoint: 880,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
@@ -67,7 +67,7 @@ const Carusel = (props) => {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
@@ -77,7 +77,7 @@ const Carusel = (props) => {
           {
             breakpoint: 1171,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 5,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
@@ -85,13 +85,13 @@ const Carusel = (props) => {
             },
           },
           {
-            breakpoint: 1200,
+            breakpoint: 1281,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 6,
               speed: 100,
               adaptiveHeight: true,
               slidesToScroll: 1,
-              centerPadding: "10px",
+              centerPadding: "5px",
             },
           },
         ],

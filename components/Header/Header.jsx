@@ -16,6 +16,7 @@ const userState=useSelector(state=>state.userReducer)
 const userLogedIn=Cookies.get()
 
   return (
+  <div className={`${styles.outerContainer}`}>
     <div className={`${styles.headerContainer}`}>
       <div className={`${styles.topBannerRow}`}><TopBanner/></div>
       <div className={`${styles.searchLogoProfileRow}`}>
@@ -35,6 +36,11 @@ const userLogedIn=Cookies.get()
       </div>
       <div className={`${styles.navBarRow}`}><NavBar/></div>
     </div>
+    <div className={`${styles.responsiveContainer}`}>
+
+    </div>
+  </div>
+    
     
   )
 

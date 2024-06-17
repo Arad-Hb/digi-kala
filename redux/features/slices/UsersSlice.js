@@ -1,13 +1,13 @@
 const { createSlice } = require("@reduxjs/toolkit")
 
-const INITIAL_STATE = { firstName:" ",lastName:" ",age:0,mobile:0,token: '' }
+const INITIAL_STATE = { firstName:" ",lastName:" ",age:0,mobile:0,jwt:" " }
 
 const usersSlice = createSlice({
     name: 'usersSlice',
     initialState: INITIAL_STATE,
     reducers: {
         setJwtToken(state, action) {
-            state.token = action.payload
+            state.jwt = action.payload
         },
         removeJwtToken(state) {
             state.token = ''

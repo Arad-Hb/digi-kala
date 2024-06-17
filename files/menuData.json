@@ -1,6 +1,6 @@
 [{
     "sideNav":[
-        {"name": "موبایل", "icon": "CiMobile3","id":"0"},
+        {"name": "موبایل", "icon": "/images/mobileIcon.png","id":"0"},
         {"name": "کتاب و لوازم تحریر", "icon": "LuPencilRuler","id":"1"},
         {"name": "کالای دیجیتال", "icon": "LiaLaptopSolid","id":"2"},
         {"name": "خانه و آشپزخانه", "icon": "RiSofaLine","id":"3"},

@@ -43,12 +43,9 @@ const SignUp = () => {
                 POST("users/login", data)
                     .then(loginResponse => {
                         alert("ثبت نام با موفقیت انجام شد.")
-                       //dispatch(setJwtToken(loginResponse.data.token))
-                       //dispatch(setUserData(values))
+                    //    dispatch(setJwtToken(loginResponse.data.token))
+                    //    dispatch(setUserData(values))
                         Cookies.set('jwt', loginResponse.data.token)
-                        Cookies.set('name', values.firstName)
-                        Cookies.set('lastName', values.lastName)
-                        Cookies.set('mobile', values.mobile)
                         router.push("/LandingPage")
 
                     })

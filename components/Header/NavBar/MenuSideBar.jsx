@@ -22,16 +22,16 @@ import {
     MdOutlineFavorite,
     MdOutlineContactPhone,
   } from "react-icons/md"
+import Image from 'next/image'
 
 
 
 
 const MenuSideBar = () => {
+
     const dispatch=useDispatch()
- 
     const menuData=Data[0].sideNav
     
-   
   return (
     <div className={`${styles.outerContainer}`}>
         {
@@ -40,7 +40,7 @@ const MenuSideBar = () => {
                 return(
                     <div className={`${styles.categoryContainer}`}>
                         <Link href={""} className={`${styles.link}`} onMouseOver={()=>dispatch(addId(item.id))}>
-                            <span className={`${styles.icon}`}></span>
+                            <span className={`${styles.icon}`}><IoCarSportOutline/></span>
                             <span className={`${styles.text}`}>{item.name}</span>
                         </Link>
                     </div>

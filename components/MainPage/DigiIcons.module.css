@@ -45,17 +45,45 @@ font-size: 40px;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
+    .iconsContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .iconsCard{  
+        flex-basis:25%; 
+        display: flex;
+        flex-direction: column;
+        
+        }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .iconsContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .iconsCard{  
+        flex-basis:25%; 
+        display: flex;
+        flex-direction: column;
+        
+        }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .iconsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -64,18 +92,14 @@ font-size: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        text-align: center;
     }
-    .iconsCard{  
-        flex-basis:25%; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1281px) {
     .iconsContainer{
         display: flex;
         flex-direction: row;

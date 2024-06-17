@@ -10,12 +10,15 @@ const IncredibleOffer = ({data}) => {
   return (
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.imageContainer}`}>
-            <Image src="/images/box.png" width={120} height={120} className={`${styles.incOfferBoxPic}`} />
-            <Image src="/images/amazingTypo.png" width={80} height={80} className={`${styles.incOfferTextPic}`} />
-            <Link href={'/products/category/incredibleOffers'} className={`${styles.incOfferText}`}>مشاهده همه</Link>
+            <div className={`${styles.incOfferImages}`}>
+                <Image src="/images/Amazings.svg" width={100} height={100} className={`${styles.amzingText}`} />
+                <Image src="/images/Amazing.svg" width={80} height={60} className={`${styles.amazingPic}`} />
+                <Image src="/images/amazing-word.svg" width={100} height={30} className={`${styles.amzingWord}`}/>
+            </div>
+            <Link href={'/products/category/incredibleOffers'} className={`${styles.incOfferLink}`}>مشاهده همه</Link>
         </div>
         <div className={`${styles.carouselContainer}`}>
-        <Carusel cardsCount={7} data={data}/>
+        <Carusel data={data}/>
         </div>
     </div>
     

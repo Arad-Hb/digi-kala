@@ -1,0 +1,9 @@
+.outerContainer{
+    display: flex;
+    justify-content: space-between;
+flex-direction: row;
+flex-wrap: nowrap;
+width: 100% vw;
+background-color: white;
+z-index: 100;
+}

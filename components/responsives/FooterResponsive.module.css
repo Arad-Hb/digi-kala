@@ -1,0 +1,27 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 1px -2px 2px #d3d4d6;
+    width: 100%;
+}
+.items{
+flex-basis: 25%;
+}
+.itemsLink{
+text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+color:#a1a3a8 ;
+font-weight: bold;
+}
+.itemsLink:hover{
+    color:#424750;
+}
+.itemsIcon{
+font-size: 28px;
+}
+.itemsTitle{
+font-size: 12px;
+}

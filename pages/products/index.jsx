@@ -1,8 +1,11 @@
+
+import MegaMenu from '@/components/Header/NavBar/MegaMenu'
 import React from 'react'
+import styles from './index.module.css'
 
 const index = () => {
   return (
-    <div>this is incredibleOffer page</div>
+    <div className={`${styles.outerContainer}`}><MegaMenu/></div>
   )
 }
 

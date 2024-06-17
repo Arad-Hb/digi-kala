@@ -31,18 +31,3 @@ box-shadow: 60px 50px 200px 400px rgba(125, 128, 131, 0.46);
 
 }
 
-.menuSideBar{
-    flex-basis: 20%;
-    display: flex;
-    overflow-y: scroll;
-    flex-wrap: nowrap;
-    background-color: #f0f0f1;
-
-}
-.menuContent{
-    flex-basis: 80%;
-    display: flex;
-    overflow-y: scroll;
-    flex-wrap: nowrap;
-    width: 100%;
-}

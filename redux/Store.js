@@ -15,7 +15,7 @@ const configuration = {
 }
 const sessionStorageConfig = {
     key : "globalStorage" ,
-    storage : sessionStorage 
+    storage : sessionStorage
 }
 
 

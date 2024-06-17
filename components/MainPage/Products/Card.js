@@ -22,7 +22,7 @@ const Card = ({product}) => {
         </div>
         <p align="justify" className={`${styles.productName}`}> {product.name.substring(0, 25)}{product.name.length > 25 ? "..." : null}</p>
        
-                <Image alt={product.name} src={product.indexImageUrl} width={200} height={200} onClick={()=>AddItemHandler(product.id)}/>
+                <Image alt={product.name}  className={`${styles.productImage}`} src={product.indexImageUrl} width={160} height={160} onClick={()=>AddItemHandler(product.id)}/>
                 {product.priceWithDiscount === 0 ? (
           <div className={`${styles.priceContainer}`}>
             {product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} تومان
