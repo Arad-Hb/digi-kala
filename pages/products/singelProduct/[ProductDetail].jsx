@@ -12,7 +12,7 @@ const ProductDetail = (props) => {
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.header}`}><SingleProductHeader data={props.selectedItem}/></div>
         <div className={`${styles.mainContent}`}><SingleProductCard data={props.selectedItem}/></div>
-        <div className={`${styles.footer}`}><Carusel cardsCount={7} data={props.similarOffers}/></div>
+        {/* <div className={`${styles.footer}`}><Carusel cardsCount={7} data={props.similarOffers}/></div> */}
     </div>
   )
 }

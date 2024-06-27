@@ -1,32 +1,196 @@
-.outerContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.originalImageContainer{
 
+@media (max-width: 480px) {
+
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .originalImageContainer{
+        border: 1px solid;
+    }
+    .originalImage{
+      height: auto;
+      border-radius: 14px;
+    
+    }
+    .ThumbnailsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px auto;
+        overflow-x: scroll;
+        max-width: 60%;
+    }
+    .Thumbnails{
+        border: 1px solid #e0e0e2;
+        border-radius: 14px;
+        margin:5px 10px;
+    }
+    .ThumbnailImage:hover{
+        padding: 2px;
+        transition: all .2s;
+    }
+    .ThumbnailImage{
+     padding: 5px;
+     border-radius: 14px;
+    } 
 }
-.originalImage{
-  height: auto;
-  border-radius: 14px;
- 
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .originalImageContainer{
+        border: 1px solid;
+    }
+    .originalImage{
+      height: auto;
+      border-radius: 14px;
+    
+    }
+    .ThumbnailsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px auto;
+        overflow-x: scroll;
+        max-width: 60%;
+    }
+    .Thumbnails{
+        border: 1px solid #e0e0e2;
+        border-radius: 14px;
+        margin:5px 10px;
+    }
+    .ThumbnailImage:hover{
+        padding: 2px;
+        transition: all .2s;
+    }
+    .ThumbnailImage{
+     padding: 5px;
+     border-radius: 14px;
+    }
 }
-.ThumbnailsContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 30px auto;
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .originalImageContainer{
+        border: 1px solid;
+    }
+    .originalImage{
+      height: auto;
+      border-radius: 14px;
+    
+    }
+    .ThumbnailsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px auto;
+        overflow-x: scroll;
+        max-width: 60%;
+    }
+    .Thumbnails{
+        border: 1px solid #e0e0e2;
+        border-radius: 14px;
+        margin:5px 10px;
+    }
+    .ThumbnailImage:hover{
+        padding: 2px;
+        transition: all .2s;
+    }
+    .ThumbnailImage{
+     padding: 5px;
+     border-radius: 14px;
+    }
 }
-.Thumbnails{
-    border: 1px solid #e0e0e2;
-    border-radius: 14px;
-    margin: 0px 10px;
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .originalImageContainer{
+        border: 1px solid;
+    }
+    .originalImage{
+      height: auto;
+      border-radius: 14px;
+    
+    }
+    .ThumbnailsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px auto;
+        overflow-x: scroll;
+        max-width: 60%;
+    }
+    .Thumbnails{
+        border: 1px solid #e0e0e2;
+        border-radius: 14px;
+        margin:5px 10px;
+    }
+    .ThumbnailImage:hover{
+        padding: 2px;
+        transition: all .2s;
+    }
+    .ThumbnailImage{
+     padding: 5px;
+     border-radius: 14px;
+    }
 }
-.ThumbnailImage:hover{
-    padding: 2px;
-    transition: all .2s;
-}
-.ThumbnailImage{
- padding: 5px;
- border-radius: 14px;
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .originalImageContainer{
+        border: 1px solid;
+    }
+    .originalImage{
+      height: auto;
+      border-radius: 14px;
+    
+    }
+    .ThumbnailsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px auto;
+        overflow-x: scroll;
+        max-width: 60%;
+    }
+    .Thumbnails{
+        border: 1px solid #e0e0e2;
+        border-radius: 14px;
+        margin:5px 10px;
+    }
+    .ThumbnailImage:hover{
+        padding: 2px;
+        transition: all .2s;
+    }
+    .ThumbnailImage{
+     padding: 5px;
+     border-radius: 14px;
+    }
 }

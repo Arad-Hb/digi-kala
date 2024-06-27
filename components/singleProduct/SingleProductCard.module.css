@@ -1,34 +1,175 @@
+
+@media (max-width: 480px) {
 .outerContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .catalogueContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imageContainer{
+        display: flex;
+
+       }
+       .detailsContainer{
+           display: flex;
+           flex-direction: column;
+    
+       }
+    .productName{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -1px;
+       }
+       .productDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
-.catalogueContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+.outerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .catalogueContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imageContainer{
+        display: flex;
+
+       }
+       .detailsContainer{
+           display: flex;
+           flex-direction: column;
+           
+       }
+    .productName{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -1px;
+       }
+       .productDetails{
+        display: flex;
+        flex-direction: column;
+    }
 }
-.imageContainer{
- flex-basis: 30%;
-}
-.detailsContainer{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70%;
-}
-.productName{
- font-size: 22px;
- font-weight: bold;
- letter-spacing: -1px;
-}
-.productDetails{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.describtion{
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+.outerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .catalogueContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imageContainer{
+        display: flex;
+
+       }
+       .detailsContainer{
+           display: flex;
+           flex-direction: column;
+           
+       }
+    .productName{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -1px;
+       }
+       .productDetails{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
-.orderCard{
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogueContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imageContainer{
+        display: flex;
 
+       }
+       .detailsContainer{
+           display: flex;
+           flex-direction: column;
+           
+       }
+    .productName{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -1px;
+       }
+       .productDetails{
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .outerContainer{
+        display: flex;
+        
+    }
+    .catalogueContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        
+    }
+    .imageContainer{
+     display: flex;
+     flex-basis: 30%;
+    }
+    .detailsContainer{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+    .productName{
+     font-size: 22px;
+     font-weight: bold;
+     letter-spacing: -1px;
+    }
+    .productDetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .describtion{
+    
+    }
+    .orderCard{
+    
+    }
 }

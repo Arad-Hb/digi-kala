@@ -28,13 +28,13 @@ const NavItems = () => {
           </Link>
         </li>
         <li>
-          <Link href={'/contactUs'} className={`${styles.navItem}`}>
+          <Link href={'/contactUs'} className={`${styles.navItemResponsive}`}>
           <RiFireLine  className={`${styles.navItemIcon}`}/>
             <span className={`${styles.navItemText}`}>پرفروش ترین ها</span>
           </Link>
         </li>
         <li>
-          <Link href={'/contactUs'} className={`${styles.navItem}`}>
+          <Link href={'/contactUs'} className={`${styles.navItemResponsive}`}>
           <RiCoupon3Line  className={`${styles.navItemIcon}`}/>
             <span className={`${styles.navItemText}`}>تخفیف ها و پیشنهادها</span>
           </Link>

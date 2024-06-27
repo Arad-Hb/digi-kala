@@ -16,8 +16,8 @@ const OrderCard = ({data}) => {
     <div className={`${styles.outerContainer}`}>
       <div className={`${styles.header}`}>
         <div className={`${styles.sellerTitle}`}>
-          <span className={`${styles.title}`}>فروشنده</span>
-          <span className={`${styles.otherSellers}`}>3 فروشنده ی دیگر</span>
+          <span className={`${styles.title}`}>فروشنده:</span>
+          <span className={`${styles.otherSellers}`}>3 فروشنده دیگر</span>
         </div>
         <div className={`${styles.sellerIntroduce}`}>
           <span className={`${styles.sellerLogo}`}><Image src='/images/footerlogo2.png' alt='digi kala' className={`${styles.sellerImage}`} width={20} height={20}/></span>
@@ -34,10 +34,9 @@ const OrderCard = ({data}) => {
               <div className={`${styles.priceBeforeOff}`}>
                   <label className={`${styles.priceWithoutDiscount}`}>{data.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}تومان</label>
                   <label className={`${styles.offPrcent}`}>{Math.floor(((data.price - data.priceWithDiscount) / data.price) * 100)}%</label>
-                </div>
+              </div>
               <div className={`${styles.priceWithDiscount}`}>{data.priceWithDiscount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}تومان</div>
             </div>
-            
           </div>
         )}
         <div className={`${styles.addButton}`}>{state.items.find(item=>item.id==data.id)?<Counter data={data}/>:data.stock!==0?<AddButton data={data}/>:<OutOfStockButton/>}</div>

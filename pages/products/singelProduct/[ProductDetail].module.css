@@ -3,9 +3,10 @@
     flex-direction: column;
 }
 .header{
-
+display: flex;
 }
 .mainContent{
+    display: flex;
  margin: 30px 10px;
 }
 .footer{

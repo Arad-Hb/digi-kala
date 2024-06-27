@@ -1,30 +1,25 @@
+import Cookies from "js-cookie"
+
 const { createSlice } = require("@reduxjs/toolkit")
 
-const INITIAL_STATE = { firstName:" ",lastName:" ",age:0,mobile:0,jwt:" " }
+const INITIAL_STATE = {user:{}}
 
-const usersSlice = createSlice({
-    name: 'usersSlice',
+const UsersSlice = createSlice({
+    name: 'UsersSlice',
     initialState: INITIAL_STATE,
     reducers: {
-        setJwtToken(state, action) {
-            state.jwt = action.payload
+        setJwtToken(action) {
+            Cookies.set('jwt',action.payload)
         },
         removeJwtToken(state) {
-            state.token = ''
-            state.firstName = ''
-            state.lastName = ''
-            state.age = ''
-            state.mobile = ''
+            state.user = {}
         },
         setUserData(state,action) {
-            state.firstName = action.payload.firstName
-            state.lastName = action.payload.lastName
-            state.age = action.payload.age
-            state.mobile = action.payload.mobile
+            state.user = action.payload
         }
 
     }
 })
 
-export const {setJwtToken , removeJwtToken,setUserData} = usersSlice.actions
-export default usersSlice.reducer
+export const {setJwtToken , removeJwtToken,setUserData} = UsersSlice.actions
+export default UsersSlice.reducer

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Header.module.css'
 import TopBanner from './TopBanner'
 import SearchBox from './SearchBox'
@@ -7,13 +7,13 @@ import NavBar from './NavBar/NavBar'
 import SignUpButton from './LoginSignUp/SignUpButton'
 import ShoppingCartIcon from './shoppingCart/ShoppingCartIcon'
 import ProfileButton from './LoginSignUp/ProfileButton'
-import { useSelector } from 'react-redux'
 import Cookies from 'js-cookie'
+import { authentication } from '@/repository/Authentication'
 
 
 const Header = () => {
-const userState=useSelector(state=>state.userReducer)
-const userLogedIn=Cookies.get()
+
+const data=authentication()
 
   return (
   <div className={`${styles.outerContainer}`}>
@@ -27,7 +27,7 @@ const userLogedIn=Cookies.get()
         <div className={`${styles.profileShoppingContainer}`}>
           <div className={`${styles.profileContainer}`}>
             {
-              userLogedIn.jwt?<ProfileButton data={userLogedIn}/>:<SignUpButton/>
+              data?<ProfileButton data={data}/>:<SignUpButton/>
             }
             </div>
           <div className={`${styles.sepLine}`}></div>

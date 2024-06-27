@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 import styles from './Login.module.css'
-import Image from 'next/image'
 import UsersErrorMessage from './UsersErrorMessage'
 import * as Yup from 'yup'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { POST } from '../../../repository/AxiosRepository'
-import { useDispatch } from 'react-redux'
-import { setJwtToken } from '@/redux/features/slices/UsersSlice'
 import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
 
 const Login = () => {
-  const dispatch=useDispatch()
+  
   const router=useRouter()
   const validationSchema = Yup.object({
     username: Yup.string().required('نام  کاربری را وارد نمایید'),
@@ -28,7 +25,6 @@ const submitHandler = (values) => {
             .then(response => {
               
                 if (response.data.hasOwnProperty("token")) {
-                    //dispatch(setJwtToken(response.data.token))
                     Cookies.set('jwt', response.data.token , { expires: 70 })
                     router.push("/dashboard/ProfilePage")
                 }

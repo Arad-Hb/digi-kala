@@ -8,7 +8,6 @@ import AcountDetails from './AcountDetails'
 
 const ProfileButton = ({data}) => {
 
-    
   return (
     <Dropdown className={`${styles.outerContainer}`}>
       <Dropdown.Toggle variant="secondary" id="dropdown-basic"   className={`${styles.userButton}`}>
@@ -16,7 +15,7 @@ const ProfileButton = ({data}) => {
       </Dropdown.Toggle>
       <Dropdown.Menu className={`${styles.userContent}`}>
         <Dropdown.Item href="/dashboard/ProfilePage" className={`${styles.userName}`}>
-          <span className={`${styles.nameText}`}>{data.name} {data.lastName}</span>
+          <span className={`${styles.nameText}`}>{data.name} {data.lastname}</span>
           <span className={`${styles.nameIcon}`}><IoIosArrowBack /></span>
         </Dropdown.Item>
         <AcountDetails/>

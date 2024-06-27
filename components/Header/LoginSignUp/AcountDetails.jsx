@@ -7,24 +7,17 @@ import { FaRegHeart } from "react-icons/fa"
 import { BiBell } from "react-icons/bi"
 import { RxExit } from "react-icons/rx"
 import { PiStarFour } from "react-icons/pi"
-import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
-import { removeJwtToken } from '@/redux/features/slices/UsersSlice'
 import Cookies from 'js-cookie'
 
 const AcountDetails = () => {
+
     const router=useRouter()
-    const dispatch=useDispatch()
     const logOutHandler=()=>{
-        //dispatch(removeJwtToken())
-        Cookies.remove('jwt')
-        Cookies.remove('name')
-        Cookies.remove('lastName')
-        Cookies.remove('mobile')
-        return(
-           router.push("/")
-       
-        )
+      Cookies.remove('jwt')
+      return(
+        router.push("/")
+    )
     }
   return (
     <div className={`${styles.outerContainer}`}>

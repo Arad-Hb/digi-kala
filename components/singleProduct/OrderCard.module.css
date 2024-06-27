@@ -1,163 +1,920 @@
-.outerContainer{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 450px;
-    background-color:#f6f6f7 ;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 14px;
+
+@media (max-width: 480px) {
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        background-color:#f6f6f7 ;
+        margin: 20px 40px;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 14px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sellerTitle{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .title{
+        display: none;
+        font-weight: 800;
+        font-size: 14px;
+        }
+        .otherSellers{
+        font-size: 12px;
+        font-weight: 800;
+        color: rgb(9, 9, 191);
+        margin-right: 50px;
+        }
+    .sellerIntroduce{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    .sellerImage{
+    width:30px !important;
+    height:30px !important;
+    }
+    .sellerName{
+    color: #454e7c;
+    margin-right:20px;
+    font-weight: 800;
+    font-size: 20px;
+    }
+    .seperator{
+        content: "";
+        background-color: #e0e0e2;
+        width: 85%;
+        height: 1px;
+        margin: 10px auto;
+        }
+        .mainContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 10px;
+            }
+            .priceContainer{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px auto;
+            }
+            .priceDetails{
+            flex-basis: 50%;
+           
+            }
+            .priceWithAndWithoutDiscount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .priceBeforeOff{
+            color: grey;
+            font-size: 14px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            font-weight: bold;
+            }
+            .priceWithoutDiscount{
+                text-decoration-line: line-through;
+                text-decoration-color: #ee384e;
+                text-decoration-thickness: 0.1px;
+            }
+            .offPrcent{
+            background-color: #ee384e;
+            color: white;
+            border-radius: 10px;
+            padding: 3px;
+            margin:0px 10px;
+            
+            }
+            .priceWithDiscount{
+           
+            font-size: 24px;
+            font-weight: bold;
+            
+            }
+            .addButton{
+                flex-basis: 50%;
+                display: flex;
+                justify-content: center;
+               
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+            .guarantee{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+            font-weight: bold;
+            color: grey;
+            }
+            .guaranteeIcon{
+            font-size: 20px;
+            }
+            .guaranteeText{
+                font-size: 14px;
+                margin: 0px 5px;
+            }
+            .deliveryContainer{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            font-weight: bold;
+            }
+            .delivery{
+            
+            }
+            .deliveryIcon{
+                font-size: 20px;
+            color:blue;
+            }
+            .deliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .fastDelivery{
+            
+            }
+            .fastDeliveryIcon{
+                font-size: 20px;
+                color: #ee384e;
+            }
+            .fastDeliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .digiClub{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             margin: 8px;
+             font-weight: bold;
+            }
+            .digiClubTitle{
+            
+            }
+            .clubIcon{
+            
+            }
+            .clubImage{
+            
+            }
+            .titleText{
+                font-size: 14px;
+                margin: 0px 10px;
+            }
+            .infoIcon{
+            
+            }
+            .digiClubPoint{
+                font-size: 14px;
+            }
+    
 }
-.header{
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+.outerContainer{
+        display: flex;
+        flex-direction: column;
+        background-color:#f6f6f7 ;
+        margin: 20px 40px;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 14px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sellerTitle{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .title{
+        display: none;
+        font-weight: 800;
+        font-size: 14px;
+        }
+        .otherSellers{
+        font-size: 12px;
+        font-weight: 800;
+        color: rgb(9, 9, 191);
+        margin-right: 50px;
+        }
+    .sellerIntroduce{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    .sellerImage{
+    width:40px !important;
+    height:40px !important;
+    }
+    .sellerName{
+    color: #454e7c;
+    margin-right:30px;
+    font-weight: 800;
+    font-size: 24px;
+    }
+    .seperator{
+        content: "";
+        background-color: #e0e0e2;
+        width: 85%;
+        height: 1px;
+        margin: 10px auto;
+        }
+        .mainContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 10px;
+            }
+            .priceContainer{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px auto;
+            }
+            .priceDetails{
+            flex-basis: 50%;
+           
+            }
+            .priceWithAndWithoutDiscount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .priceBeforeOff{
+            color: grey;
+            font-size: 14px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            font-weight: bold;
+            }
+            .priceWithoutDiscount{
+                text-decoration-line: line-through;
+                text-decoration-color: #ee384e;
+                text-decoration-thickness: 0.1px;
+            }
+            .offPrcent{
+            background-color: #ee384e;
+            color: white;
+            border-radius: 10px;
+            padding: 3px;
+            margin:0px 10px;
+            
+            }
+            .priceWithDiscount{
+           
+            font-size: 24px;
+            font-weight: bold;
+            
+            }
+            .addButton{
+                flex-basis: 50%;
+                display: flex;
+                justify-content: center;
+               
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+            .guarantee{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+            font-weight: bold;
+            color: grey;
+            }
+            .guaranteeIcon{
+            font-size: 20px;
+            }
+            .guaranteeText{
+                font-size: 14px;
+                margin: 0px 5px;
+            }
+            .deliveryContainer{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            font-weight: bold;
+            }
+            .delivery{
+            
+            }
+            .deliveryIcon{
+                font-size: 20px;
+            color:blue;
+            }
+            .deliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .fastDelivery{
+            
+            }
+            .fastDeliveryIcon{
+                font-size: 20px;
+                color: #ee384e;
+            }
+            .fastDeliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .digiClub{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             margin: 8px;
+             font-weight: bold;
+            }
+            .digiClubTitle{
+            
+            }
+            .clubIcon{
+            
+            }
+            .clubImage{
+            
+            }
+            .titleText{
+                font-size: 14px;
+                margin: 0px 10px;
+            }
+            .infoIcon{
+            
+            }
+            .digiClubPoint{
+                font-size: 14px;
+            }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+.outerContainer{
+        display: flex;
+        flex-direction: column;
+        background-color:#f6f6f7 ;
+        margin: 20px 40px;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 14px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sellerTitle{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .title{
+        font-weight: 800;
+        font-size: 14px;
+        }
+        .otherSellers{
+        font-size: 12px;
+        font-weight: 800;
+        color: rgb(9, 9, 191);
+        margin-right: 50px;
+        }
+    .sellerIntroduce{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    .sellerImage{
+    width:50px !important;
+    height:50px !important;
+    }
+    .sellerName{
+    color: #454e7c;
+    margin-right:50px;
+    font-weight: 800;
+    font-size: 24px;
+    }
+    .seperator{
+        content: "";
+        background-color: #e0e0e2;
+        width: 85%;
+        height: 1px;
+        margin: 10px auto;
+        }
+        .mainContent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 10px;
+            }
+            .priceContainer{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            }
+            .priceDetails{
+            flex-basis: 50%;
+           
+            }
+            .priceWithAndWithoutDiscount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .priceBeforeOff{
+            color: grey;
+            font-size: 14px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            font-weight: bold;
+            }
+            .priceWithoutDiscount{
+                text-decoration-line: line-through;
+                text-decoration-color: #ee384e;
+                text-decoration-thickness: 0.1px;
+            }
+            .offPrcent{
+            background-color: #ee384e;
+            color: white;
+            border-radius: 10px;
+            padding: 3px;
+            margin:0px 10px;
+            
+            }
+            .priceWithDiscount{
+           
+            font-size: 24px;
+            font-weight: bold;
+            
+            }
+            .addButton{
+                flex-basis: 50%;
+                display: flex;
+                justify-content: center;
+               
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+            .guarantee{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+            font-weight: bold;
+            color: grey;
+            }
+            .guaranteeIcon{
+            font-size: 20px;
+            }
+            .guaranteeText{
+                font-size: 14px;
+                margin: 0px 5px;
+            }
+            .deliveryContainer{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            font-weight: bold;
+            }
+            .delivery{
+            
+            }
+            .deliveryIcon{
+                font-size: 20px;
+            color:blue;
+            }
+            .deliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .fastDelivery{
+            
+            }
+            .fastDeliveryIcon{
+                font-size: 20px;
+                color: #ee384e;
+            }
+            .fastDeliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .digiClub{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             margin: 8px;
+             font-weight: bold;
+            }
+            .digiClubTitle{
+            
+            }
+            .clubIcon{
+            
+            }
+            .clubImage{
+            
+            }
+            .titleText{
+                font-size: 14px;
+                margin: 0px 10px;
+            }
+            .infoIcon{
+            
+            }
+            .digiClubPoint{
+                font-size: 14px;
+            }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        background-color:#f6f6f7 ;
+        margin: 20px 40px;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 14px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sellerTitle{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .title{
+        font-weight: 800;
+        font-size: 14px;
+        }
+        .otherSellers{
+        font-size: 12px;
+        font-weight: 800;
+        color: rgb(9, 9, 191);
+        margin-right: 50px;
+        }
+    .sellerIntroduce{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    .sellerImage{
+    width:50px !important;
+    height:50px !important;
+    }
+    .sellerName{
+    color: #454e7c;
+    margin-right:50px;
+    font-weight: 800;
+    font-size: 24px;
+    }
+    .seperator{
+        content: "";
+        background-color: #e0e0e2;
+        width: 85%;
+        height: 1px;
+        margin: 10px auto;
+        }
+        .mainContent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 10px;
+            }
+            .priceContainer{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            }
+            .priceDetails{
+            flex-basis: 50%;
+           
+            }
+            .priceWithAndWithoutDiscount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .priceBeforeOff{
+            color: grey;
+            font-size: 14px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            font-weight: bold;
+            }
+            .priceWithoutDiscount{
+                text-decoration-line: line-through;
+                text-decoration-color: #ee384e;
+                text-decoration-thickness: 0.1px;
+            }
+            .offPrcent{
+            background-color: #ee384e;
+            color: white;
+            border-radius: 10px;
+            padding: 3px;
+            margin:0px 10px;
+            
+            }
+            .priceWithDiscount{
+           
+            font-size: 24px;
+            font-weight: bold;
+            
+            }
+            .addButton{
+                flex-basis: 50%;
+                display: flex;
+                justify-content: center;
+               
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+            .guarantee{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+            font-weight: bold;
+            color: grey;
+            }
+            .guaranteeIcon{
+            font-size: 20px;
+            }
+            .guaranteeText{
+                font-size: 14px;
+                margin: 0px 5px;
+            }
+            .deliveryContainer{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            font-weight: bold;
+            }
+            .delivery{
+            
+            }
+            .deliveryIcon{
+                font-size: 20px;
+            color:blue;
+            }
+            .deliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .fastDelivery{
+            
+            }
+            .fastDeliveryIcon{
+                font-size: 20px;
+                color: #ee384e;
+            }
+            .fastDeliveryText{
+            font-size: 14px;
+            margin: 0px 5px;
+            }
+            .digiClub{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             margin: 8px;
+             font-weight: bold;
+            }
+            .digiClubTitle{
+            
+            }
+            .clubIcon{
+            
+            }
+            .clubImage{
+            
+            }
+            .titleText{
+                font-size: 14px;
+                margin: 0px 10px;
+            }
+            .infoIcon{
+            
+            }
+            .digiClubPoint{
+                font-size: 14px;
+            }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 450px;
+        background-color:#f6f6f7 ;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 14px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+    .sellerTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .title{
+    font-weight: bold;
+    }
+    .otherSellers{
+    font-size: 14px;
+    color: blue;
+    }
+    .sellerIntroduce{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+    }
+    .sellerLogo{
+    
+    }
+    .sellerName{
+    color: #454e7c;
+    margin: 0px 10px;
+    }
+    .seperator{
+    content: "";
+    background-color: #e0e0e2;
+    width: 85%;
+    height: 1px;
+    margin: 10px auto;
+    }
+    .mainContent{
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
-}
-.sellerTitle{
+    }
+    .priceContainer{
+    display: flex;
+    flex-direction: column;
+    }
+    .priceDetails{
+    
+    }
+    .priceWithAndWithoutDiscount{
+        display: flex;
+        flex-direction: column;
+    }
+    .priceBeforeOff{
+    color: grey;
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.title{
-font-weight: bold;
-}
-.otherSellers{
-font-size: 14px;
-color: blue;
-}
-.sellerIntroduce{
+    font-weight: bold;
+    }
+    .priceWithoutDiscount{
+        text-decoration-line: line-through;
+        text-decoration-color: #ee384e;
+        text-decoration-thickness: 0.1px;
+    }
+    .offPrcent{
+    background-color: #ee384e;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    
+    }
+    .priceWithDiscount{
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: bold;
+    
+    }
+    .addButton{
+        margin: 10px auto;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .guarantee{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-}
-.sellerLogo{
-
-}
-.sellerName{
-color: #454e7c;
-margin: 0px 10px;
-}
-.seperator{
-content: "";
-background-color: #e0e0e2;
-width: 85%;
-height: 1px;
-margin: 10px auto;
-}
-.mainContent{
-display: flex;
-flex-direction: column;
-margin: 10px 10px;
-}
-.priceContainer{
-display: flex;
-flex-direction: column;
-}
-.priceDetails{
-
-}
-.priceWithAndWithoutDiscount{
+    margin: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: grey;
+    }
+    .guaranteeIcon{
+    font-size: 20px;
+    }
+    .guaranteeText{
+        font-size: 14px;
+        margin: 0px 5px;
+    }
+    .deliveryContainer{
     display: flex;
     flex-direction: column;
-}
-.priceBeforeOff{
-color: grey;
-font-size: 12px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-font-weight: bold;
-}
-.priceWithoutDiscount{
-    text-decoration-line: line-through;
-    text-decoration-color: #ee384e;
-    text-decoration-thickness: 0.1px;
-}
-.offPrcent{
-background-color: #ee384e;
-color: white;
-border-radius: 10px;
-padding: 2px;
-
-}
-.priceWithDiscount{
-margin: 10px auto;
-font-size: 18px;
-font-weight: bold;
-
-}
-.addButton{
-    margin: 10px auto;
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-}
-.guarantee{
-display: flex;
-flex-direction: row;
-margin: 10px;
-align-items: center;
-font-weight: bold;
-color: grey;
-}
-.guaranteeIcon{
-font-size: 20px;
-}
-.guaranteeText{
+    margin: 10px;
+    font-weight: bold;
+    }
+    .delivery{
+    
+    }
+    .deliveryIcon{
+        font-size: 20px;
+    color:blue;
+    }
+    .deliveryText{
     font-size: 14px;
     margin: 0px 5px;
-}
-.deliveryContainer{
-display: flex;
-flex-direction: column;
-margin: 10px;
-font-weight: bold;
-}
-.delivery{
-
-}
-.deliveryIcon{
-    font-size: 20px;
-color:blue;
-}
-.deliveryText{
-font-size: 14px;
-margin: 0px 5px;
-}
-.fastDelivery{
-
-}
-.fastDeliveryIcon{
-    font-size: 20px;
-    color: #ee384e;
-}
-.fastDeliveryText{
-font-size: 14px;
-margin: 0px 5px;
-}
-.digiClub{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- margin: 8px;
- font-weight: bold;
-}
-.digiClubTitle{
-
-}
-.clubIcon{
-
-}
-.clubImage{
-
-}
-.titleText{
+    }
+    .fastDelivery{
+    
+    }
+    .fastDeliveryIcon{
+        font-size: 20px;
+        color: #ee384e;
+    }
+    .fastDeliveryText{
     font-size: 14px;
-    margin: 0px 10px;
-}
-.infoIcon{
-
-}
-.digiClubPoint{
-    font-size: 14px;
+    margin: 0px 5px;
+    }
+    .digiClub{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 8px;
+     font-weight: bold;
+    }
+    .digiClubTitle{
+    
+    }
+    .clubIcon{
+    
+    }
+    .clubImage{
+    
+    }
+    .titleText{
+        font-size: 14px;
+        margin: 0px 10px;
+    }
+    .infoIcon{
+    
+    }
+    .digiClubPoint{
+        font-size: 14px;
+    }
 }
