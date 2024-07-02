@@ -49,6 +49,9 @@ const MenuContent = () => {
           }
         })
       }
+      <div className={`${styles.responsiveContainer}`}>
+        
+      </div>
     </div>
   )
 }

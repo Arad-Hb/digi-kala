@@ -6,11 +6,7 @@ import "@/styles/globals.css"
 import Link from 'next/link'
 import { PersistGate } from 'redux-persist/integration/react'
 import LoadingComponent from '@/components/Features/LoadingComponent'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 import RootLayout from '@/components/layout/RootLayout'
-
-
 
 
 const iranSansFont=localFont(
@@ -27,9 +23,7 @@ const BnazaninFont=localFont({src:'../public/fonts/Bnazanin/BNazanin.woff'})
 
 export default function App({ Component, pageProps}) {
 
-
   return(
-
 <div className={iranSansFont.className }>
       <Provider store={Store}>
         <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
@@ -38,7 +32,6 @@ export default function App({ Component, pageProps}) {
           </RootLayout>
         </PersistGate>
       </Provider>
-      <Link href={'/'}>back to home</Link>
   </div> 
   )
 }

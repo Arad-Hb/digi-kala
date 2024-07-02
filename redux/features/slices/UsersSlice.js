@@ -1,9 +1,7 @@
 import Cookies from "js-cookie"
-
 const { createSlice } = require("@reduxjs/toolkit")
 
 const INITIAL_STATE = {user:{}}
-
 const UsersSlice = createSlice({
     name: 'UsersSlice',
     initialState: INITIAL_STATE,
@@ -11,7 +9,7 @@ const UsersSlice = createSlice({
         setJwtToken(action) {
             Cookies.set('jwt',action.payload)
         },
-        removeJwtToken(state) {
+        removeUserData(state) {
             state.user = {}
         },
         setUserData(state,action) {
@@ -21,5 +19,5 @@ const UsersSlice = createSlice({
     }
 })
 
-export const {setJwtToken , removeJwtToken,setUserData} = UsersSlice.actions
+export const {setJwtToken , removeUserData,setUserData} = UsersSlice.actions
 export default UsersSlice.reducer

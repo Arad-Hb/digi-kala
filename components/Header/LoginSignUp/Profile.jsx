@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './Profile.module.css'
 import AcountDetails from './AcountDetails'
 import Image from 'next/image'
-import Cookies from 'js-cookie'
 import { authentication } from '@/repository/Authentication'
-import { useRouter } from 'next/router'
+
 
 const Profile = () => {
 
-const router=useRouter()
 const data=authentication()
 
-const deleteAcount=()=>{
-  Cookies.remove('jwt')
-
-  return(
-      router.push("/")
-  )
-}
   return (
     <div className={`${styles.outerContainer}`}>
       <div className={`${styles.sideBar}`}>
@@ -28,7 +19,6 @@ const deleteAcount=()=>{
           </div>
         </div>
         <div className={`${styles.details}`}><AcountDetails/></div>
-        <div onClick={deleteAcount}>حذف حساب کاربری</div>
       </div>
       <div className={`${styles.mainContent}`}>
         <div  className={`${styles.varification}`}>

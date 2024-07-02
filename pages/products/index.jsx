@@ -1,7 +1,7 @@
 
-import MegaMenu from '@/components/Header/NavBar/MegaMenu'
 import React from 'react'
 import styles from './index.module.css'
+import MegaMenu from '@/components/Header/NavBar/MegaMenu'
 
 const index = () => {
   return (

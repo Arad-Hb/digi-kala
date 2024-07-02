@@ -1,9 +1,9 @@
 .outerContainer{
-
+width: 100%;
 }
 .headerContainer{
     margin: 10px auto;
-    
+    width: 100%;
 }
 .headerResponsive{
     display: none;
@@ -16,10 +16,10 @@
     background-color: white;
 }
 .mainContainer{
-
+width: 100%;
 }
 .footerContainer{
-
+width: 100%;
 }
 .footerResponsive{
     display: none;

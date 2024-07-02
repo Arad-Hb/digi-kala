@@ -101,7 +101,7 @@ margin: 10px;
         background: linear-gradient(180deg, rgba(239,57,78,1) 0%, rgba(239,64,86,1) 100%);
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         border-radius: 12px;
     }
     

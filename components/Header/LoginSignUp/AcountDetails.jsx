@@ -7,17 +7,30 @@ import { FaRegHeart } from "react-icons/fa"
 import { BiBell } from "react-icons/bi"
 import { RxExit } from "react-icons/rx"
 import { PiStarFour } from "react-icons/pi"
+import { AiOutlineUserDelete } from "react-icons/ai"
 import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
+import { useDispatch } from 'react-redux'
+import { removeUserData } from '@/redux/features/slices/UsersSlice'
 
 const AcountDetails = () => {
 
     const router=useRouter()
+    const dispatch=useDispatch()
+
     const logOutHandler=()=>{
       Cookies.remove('jwt')
       return(
         router.push("/")
     )
+    }
+
+    const deleteAcountHandler=()=>{
+      Cookies.remove('jwt')
+      dispatch(removeUserData())
+      return(
+          router.push("/")
+      )
     }
   return (
     <div className={`${styles.outerContainer}`}>
@@ -56,6 +69,11 @@ const AcountDetails = () => {
         <div onClick={logOutHandler} className={`${styles.items}`}>
           <span className={`${styles.itemsIcon}`}><RxExit /></span>
           <span className={`${styles.itemsText}`}>خروج از حساب کاربری</span>
+        </div>
+        <div className={`${styles.seperator}`}></div>
+        <div onClick={deleteAcountHandler} className={`${styles.items}`}>
+          <span className={`${styles.itemsIcon}`}><AiOutlineUserDelete /></span>
+          <span className={`${styles.itemsText}`}>حذف حساب کاربری</span>
         </div>
     </div>
   )

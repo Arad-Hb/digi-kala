@@ -5,13 +5,15 @@ import styles from './[selectedCategory].module.css'
 
 const selectedCategory = (props) => {
   return (
-    <div className={`${styles.selectedCategory}`}>
+    <div className={`${styles.outerContainer}`}>
+        <div className={`${styles.categoryTitle}`}>{props.selectedItemName}</div>
+        <div className={`${styles.selectedCategory}`}>
         {
             props.selectedItemCategory.map(item=>{
-                return<div><Card product={item}/></div>
+                return<div className={`${styles.selectedCategoryItems}`}><Card product={item}/></div>
             })
         }
-       
+       </div>
     </div>
   )
 }
@@ -27,7 +29,8 @@ export async function getServerSideProps(context){
     
     return{
         props:{
-            selectedItemCategory:result
+            selectedItemCategory:result,
+            selectedItemName:selectedItemUrl
         }
     }
 }

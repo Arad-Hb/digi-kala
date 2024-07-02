@@ -16,7 +16,7 @@ const FooterTitle = () => {
             </div>
         </div>
         <div className={`${styles.goUp}`}>
-            <Link href={''}className={`${styles.goUpButton}`}>بازگشت به بالا</Link>
+            <Link href={'/'}className={`${styles.goUpButton}`}>بازگشت به صفحه اصلی</Link>
         </div>
     </div>
   )

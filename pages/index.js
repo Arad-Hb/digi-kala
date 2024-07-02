@@ -1,13 +1,14 @@
 import DigiIcons from "@/components/MainPage/DigiIcons";
 import MainSlider from "@/components/MainPage/MainSlider";
 import IncredibleOffer from "@/components/MainPage/Products/IncredibleOffer";
-import RootLayout from "@/components/layout/RootLayout";
 import { GET } from "@/repository/FetchRepository";
 import styles from "@/styles/Home.module.css"
-import { redirect } from "next/dist/server/api-utils";
 import { useDispatch } from "react-redux";
 import {setImagesData} from '@/redux/features/slices/StaticImagesSlice'
-import { useEffect } from "react";
+import SmallBanner from "@/components/MainPage/advertises/SmallBanner";
+import LargeBanner from "@/components/MainPage/advertises/LargeBanner";
+import SingleBanner from "@/components/MainPage/advertises/SingleBanner";
+import MegaMenuItems from "@/components/MainPage/MegaMenuItems";
 
 
 
@@ -28,7 +29,11 @@ export default function Home(props) {
     <div className={`${styles.Home}`}>
       <div className={`${styles.mainSlider}`}><MainSlider data={props.SliderImages}/></div>
       <div className={`${styles.digiIcons}`}><DigiIcons data={props.digiIcons}/></div>
+      <div className={`${styles.advertiseSingleBanner}`}><SingleBanner/></div>
+      <div className={`${styles.megaMenuItems}`}><MegaMenuItems/></div>
+      <div className={`${styles.advertiseSmallBanner}`}><SmallBanner/></div>
       <div className={`${styles.incredibleOffer}`}><IncredibleOffer data={props.incOfferProducts}/></div>
+      <div className={`${styles.advertiseLargeBanner}`}><LargeBanner/></div>
     </div>
   );
 }

@@ -7,11 +7,13 @@ import { POST } from '@/repository/AxiosRepository'
 import UsersErrorMessage from '@/components/Header/LoginSignUp/UsersErrorMessage'
 import Cookies from 'js-cookie'
 import { setUserData } from '@/redux/features/slices/UsersSlice'
+import { useDispatch } from 'react-redux'
 
 
 const SignUp = () => {
 
     const router = useRouter()
+    const dispatch=useDispatch()
 
     const validationSchema = Yup.object({
         name: Yup.string().required('لطفا نام خود را وارد نمایید'),
@@ -44,8 +46,7 @@ const SignUp = () => {
                     .then(loginResponse => {
                         alert("ثبت نام با موفقیت انجام شد.")
                         Cookies.set('jwt', loginResponse.data.token)
-                        setUserData(values)
-                        // Cookies.set('user', JSON.stringify(values))
+                        dispatch(setUserData(values))
                         router.push("/dashboard/ProfilePage")
 
                     })

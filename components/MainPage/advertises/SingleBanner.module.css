@@ -1,0 +1,14 @@
+.outerContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.advertiseItem{
+    width: 100%;
+padding: 20px;
+}
+.advertiseItemImage{
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 14px;
+}

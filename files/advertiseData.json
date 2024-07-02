@@ -1,0 +1,15 @@
+[
+    {"smallBanners":[
+        {"id":0,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/d96e7ea767ac9c2f0e4dc0316a625a276c5716df_1716971139.jpg?x-oss-process=image/quality,q_95/format,webp"},
+        {"id":1,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/296675314d1f7b569b054c8eb2f4ca640d620566_1719757080.jpg?x-oss-process=image/quality,q_95/format,webp"},
+        {"id":2,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/1ffa7b50fe51e789e02389b7424941b5a19fed9c_1719661784.jpg?x-oss-process=image/quality,q_95/format,webp"},
+        {"id":3,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/855c0e09c80c40c119ef37444fa90f77772a5ddd_1719645529.jpg?x-oss-process=image/quality,q_95/format,webp"}
+    ]},
+    {"largeBanners":[
+        {"id":0,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/657a454918d19b1ac1a9766128de25e8be49c360_1719389859.gif?x-oss-process=image?x-oss-process=image/format,webp"},
+        {"id":1,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/6fc8e2d21aba219e1aa2cc93cb4a5fd66a16caac_1719391139.gif?x-oss-process=image?x-oss-process=image/format,webp"}
+    ]},
+    {"fullWidthBanners":[
+        {"id":0,"imageUrl":"https://dkstatics-public.digikala.com/digikala-adservice-banners/99de3501fbac2bc78fb717c035ec34426c311b3b_1719390503.jpg?x-oss-process=image/quality,q_95/format,webp"}
+    ]}
+]

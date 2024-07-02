@@ -5,12 +5,10 @@ import Link from 'next/link'
 import ShoppingCartBadge from './ShoppingCartBadge'
 
 const ShoppingCartIcon = () => {
-    const setShoppingBasket=()=>{
-        alert("shopping button clicked")
-      }
+   
   return (
     <div className={`${styles.shoppingCartIconContainer}`}>
-        <Link href={'/shoppingCart'} onClick={setShoppingBasket} className={`${styles.shoppingCartLink}`}>
+        <Link href={'/shoppingCart'} className={`${styles.shoppingCartLink}`}>
             <RiShoppingCartLine  className={`${styles.shoppingCartIcon}`}/>
         </Link>
         <div className={`${styles.shoppingCartBadge}`}>

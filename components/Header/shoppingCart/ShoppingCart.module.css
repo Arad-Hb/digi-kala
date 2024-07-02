@@ -1,3 +1,6 @@
+.outerContainer{
+    margin: 30px 0px;
+}
 .innerContainer{
    display: flex;
    flex-direction: row; 
@@ -13,5 +16,75 @@ flex-basis: 60%;
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
+
+}
+@media (max-width: 480px) {
+.outerContainer{
+    margin: 80px 0px;
+}
+.innerContainer{
+   display: flex;
+   flex-direction: column; 
+   text-align: center;
+
+}
+
+.paymentContainer{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+.outerContainer{
+    margin: 70px 0px;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+ 
+ }
+
+.paymentContainer{
+
+    display: flex;
+    flex-direction: column;
+
+}
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+.outerContainer{
+    margin: 70px 0px;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+ 
+ }
+
+.paymentContainer{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
 
 }

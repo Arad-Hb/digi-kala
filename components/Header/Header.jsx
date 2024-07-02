@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './Header.module.css'
 import TopBanner from './TopBanner'
 import SearchBox from './SearchBox'
@@ -7,7 +7,6 @@ import NavBar from './NavBar/NavBar'
 import SignUpButton from './LoginSignUp/SignUpButton'
 import ShoppingCartIcon from './shoppingCart/ShoppingCartIcon'
 import ProfileButton from './LoginSignUp/ProfileButton'
-import Cookies from 'js-cookie'
 import { authentication } from '@/repository/Authentication'
 
 

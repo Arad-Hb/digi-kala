@@ -1,71 +1,69 @@
 .outerContainer{
     display: flex;
-    flex-direction: column;
-    margin: 30px 5px;
-}
-.categoryTitle{
-font-size: 34px;
-font-weight: 800;
-color: rgb(66 133 244);
-text-align: center;
-}
-.selectedCategory{
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    
 }
-.selectedCategoryItems{
-    margin: 20px auto;
+.advertiseItem{
+flex-basis: 45%;
+padding: 20px;
+}
+.advertiseItemImage{
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 14px;
 }
 @media (max-width: 480px) {
-    .outerContainer{
-        margin: 70px 5px;
-    }
-.selectedCategory{
+.outerContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.selectedCategoryItems{
-    margin: 20px auto;
+.advertiseItem{
+flex-basis: 85%;
+border-radius: 14px;
+}
+.advertiseItemImage{
+    width: 100% !important;
+    height: auto !important;
 }
     
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
-    .outerContainer{
-        margin: 70px 5px;
-    }
-.selectedCategory{
+.outerContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
- 
+    flex-wrap: wrap;
 }
-.selectedCategoryItems{
-    margin: 20px auto;
+.advertiseItem{
+flex-basis: 85%;
+border-radius: 14px;
+}
+.advertiseItemImage{
+    width: 100% !important;
+    height: auto !important;
 }
 }
   
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
-    .outerContainer{
-        margin: 70px 5px;
-    }
-.selectedCategory{
+.outerContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-   
+    flex-wrap: wrap;
 }
-.selectedCategoryItems{
-margin: 20px auto;
+.advertiseItem{
+flex-basis: 85%;
+padding: 20px;
+border-radius: 14px;
+}
+.advertiseItemImage{
+    width: 100% !important;
+    height: auto !important;
 }
 
 }
