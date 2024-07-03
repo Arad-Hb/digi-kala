@@ -1,7 +1,12 @@
 .outerContainer{
+display: flex;
+flex-direction: column;
+}
+.mainContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .logoContainer{
     display: flex;
@@ -31,6 +36,74 @@
     font-size: 12px;
     margin:5px 10px ;
 }
+.responsive{
+    display: none;
+}
+.responsiveBackToHome{
+    margin: 20px auto;
+}
+.responsiveBackToHomeLink{
+text-decoration: none;
+color:#007aff ;
+font-size: 14px;
+font-weight:800;
+}
+.responsiveContactUs{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.responsiveContactUsText{
+font-size: 14px;
+font-weight:800;
+}
+.responsiveContactUsIcon{
+font-size: 32px;
+font-weight: 800;
+margin-left:10px ;
+}
+
+.contactUsButton{
+outline: none;
+border-radius: 7px;
+background-color: white;
+color: black;
+border: 1px solid black;
+font-size: 12px;
+padding: 10px;
+}
+.responsiveSource{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sourceText{
+font-size: 14px;
+font-weight:800;
+}
+.sourceIcon{
+    margin-left:10px ;
+}
+
+.sourceButton{
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+.appSourcesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .goUpButton{
     text-decoration: none;
@@ -41,4 +114,50 @@
     width: 100px;
     height: 30px;
     padding: 10px 20px;
+}
+@media (max-width: 480px) {
+.mainContainer{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+.mainContainer{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .mainContainer{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
 }

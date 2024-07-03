@@ -1,0 +1,26 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.responsiveMain{
+display: flex;
+width:100%;
+margin: 20px auto;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+width:100%;
+font-size: 14px;
+font-weight: 800;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+width:100%;
+outline: none;
+}

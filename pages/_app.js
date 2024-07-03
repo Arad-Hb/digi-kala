@@ -3,7 +3,6 @@ import localFont from 'next/font/local'
 import { Provider } from 'react-redux'
 import { Store, persistor } from '@/redux/Store'
 import "@/styles/globals.css"
-import Link from 'next/link'
 import { PersistGate } from 'redux-persist/integration/react'
 import LoadingComponent from '@/components/Features/LoadingComponent'
 import RootLayout from '@/components/layout/RootLayout'

@@ -4,7 +4,6 @@ import React from 'react'
 import styles from './[ProductDetail].module.css'
 import SingleProductHeader from '@/components/singleProduct/SingleProductHeader'
 import SingleProductCard from '@/components/singleProduct/SingleProductCard'
-import Carusel from '@/components/carusel/Carusel'
 
 const ProductDetail = (props) => {
   
@@ -12,7 +11,6 @@ const ProductDetail = (props) => {
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.header}`}><SingleProductHeader data={props.selectedItem}/></div>
         <div className={`${styles.mainContent}`}><SingleProductCard data={props.selectedItem}/></div>
-        {/* <div className={`${styles.footer}`}><Carusel cardsCount={7} data={props.similarOffers}/></div> */}
     </div>
   )
 }

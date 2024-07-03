@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 
 const SingleProductHeader = ({data}) => {
   const router=useRouter()
-  console.log(router.pathname);
   return (
     <div className={`${styles.outerContainer}`}>
       <div className={`${styles.router}`}>{router.pathname}</div>

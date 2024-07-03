@@ -39,7 +39,6 @@ const Footer = () => {
       <div className={`${styles.copyWrite}`}>برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</div>
       <div className={`${styles.partnerContainer}`}><Partners/></div> 
    </div>
-   <div className={`${styles.responsiveFooterContainer}`}></div>
  </div>
     
   )

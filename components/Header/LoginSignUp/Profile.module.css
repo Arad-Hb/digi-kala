@@ -1,30 +1,42 @@
 .outerContainer{
     display: flex;
+    justify-content: center;
+}
+.mainContainer{
+    display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 .sideBar{
-flex-basis: 20%;
+flex-basis: 25%;
 font-size: 22px!important;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 border-radius: 7px;
 }
 .personalInformations{
-
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
 }
 .information{
     display: flex;
     flex-direction: column;
-    text-align: right;
-    margin-right: 20px;
+    font-size: 18px;
+font-weight: bold;
+
+}
+.informationIcon{
+    color:#45bfd3 ;
+    font-size: 20px;
+    font-weight: bold;
 }
 .name{
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 5px;
+
 }
 .mobile{
-font-size: 22px;
-font-weight: bold;
 color: rgb(104, 103, 103);
 }
 .details{
@@ -37,22 +49,59 @@ flex-direction: column;
 align-items: center;
 }
 .varification{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 border-radius: 7px;
-width: 900px;
+width: 95%;
 margin: 20px auto;
-font-size: 14px;
 padding: 10px 5px;
 }
+.varificationInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.varificationIcon{
+color:#45bfd3 ;
+font-size: 20px;
+margin-left: 5px;
+}
+.varificationText{
+    color: #f78d17;
+    font-size: 12px;
+}
+.varificationLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.link{
+text-decoration: none;
+color:#45bfd3 ;
+}
+.linkText{
+    font-size: 12px;
+}
+.linkIcon{
+    font-size: 18px;
+}
 .orderDetails{
+    display: flex;
+    flex-direction: column;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-width: 900px;
+width: 95%;
 margin: 20px auto;
 border-radius: 7px;
 }
 .detailsTitle{
 margin: 20px;
 font-weight: bold;
+
 }
 .detailsItems{
     display: flex;
@@ -82,9 +131,177 @@ padding: 20px;
 font-weight: bold;
 }
 .organsOrder{
+    display: flex;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 font-size: 14px;
 border-radius: 7px;
-width: 900px;
+width: 95%;
 padding: 10px 5px;
+}
+.responsiveContainer{
+display: none;
+
+}
+.responsiveHeader{
+
+}
+.responsiveMain{
+
+}
+.responsiveFooter{
+
+}
+@media (max-width: 480px) {
+.mainContainer{
+        display: none;
+        flex-direction: row;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    font-weight: bold;
+    
+    }
+    .varification{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 7px;
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px 5px;
+        }
+    .varificationText{
+        color: #f78d17;
+        font-size: 10px;
+    }
+        .linkText{
+            font-size: 10px;
+        }
+        .linkIcon{
+            font-size: 10px;
+        }
+    .responsiveContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 70px 0px;
+        }
+        .item{
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            }
+            .itemCondition{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+                font-size: 12px;
+            }
+            .ConditionNumber{
+         text-align: center;
+    
+            }
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+.mainContainer{
+        display: none;
+        flex-direction: row;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    font-weight: bold;
+    
+    }
+    .varificationText{
+        color: #f78d17;
+        font-size: 10px;
+    }
+        .linkText{
+            font-size: 10px;
+        }
+        .linkIcon{
+            font-size: 10px;
+        }
+    .responsiveContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 70px 0px;
+        }
+        .item{
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            }
+            .itemCondition{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+                font-size: 12px;
+            }
+            .ConditionNumber{
+         text-align: center;
+    
+            }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .mainContainer{
+        display: none;
+        flex-direction: row;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    font-weight: bold;
+    
+    }
+    .responsiveContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 70px 0px;
+        }
+        .item{
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            }
+            .itemCondition{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+                font-size: 12px;
+            }
+            .ConditionNumber{
+         text-align: center;
+    
+            }
+
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    
 }

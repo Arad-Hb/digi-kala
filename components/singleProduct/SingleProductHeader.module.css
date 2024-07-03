@@ -4,6 +4,7 @@
     justify-content: space-between;
     box-shadow: -2px 2px 3px rgb(196, 196, 196);
     align-items: center;
+    width: 100%;
 }
 .router{
     color: #19bfd3;
@@ -11,7 +12,7 @@
     letter-spacing: 2px;
 }
 .incOffer{
- background-color: #fdecf0;
+
 }
 .incredibleOfferImage{
  padding: 5px 30px;

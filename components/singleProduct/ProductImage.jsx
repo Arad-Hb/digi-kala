@@ -9,7 +9,7 @@ const ProductImage = ({data}) => {
   return (
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.originalImageContainer}`}>
-          <Image src={imageToShow} alt={data.name} className={`${styles.originalImage}`} width={400} height={0}/>
+          <Image src={imageToShow} alt={data.name} className={`${styles.originalImage}`} width={300} height={0}/>
         </div>
         <div className={`${styles.ThumbnailsContainer}`}>
             {data.images?(data.images.map(item=>{

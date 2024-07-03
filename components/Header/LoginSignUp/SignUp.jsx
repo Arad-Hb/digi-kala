@@ -65,7 +65,7 @@ const SignUp = () => {
           </div>
           <div className={`${styles.formContainer}`}>
           <Formik onSubmit={submitHandler} initialValues={formFields} validationSchema={validationSchema} validateOnChange={false} validateOnBlur={false}>
-                <Form>
+                <Form className={`${styles.form}`}>
                     <div className={`${styles.fieldsContainer}`}>
                         <Field className={`${styles.field}`} type="text" name="name" placeholder="نام" />
                         <ErrorMessage name="name" component={UsersErrorMessage} />

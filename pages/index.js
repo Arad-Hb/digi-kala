@@ -9,21 +9,14 @@ import SmallBanner from "@/components/MainPage/advertises/SmallBanner";
 import LargeBanner from "@/components/MainPage/advertises/LargeBanner";
 import SingleBanner from "@/components/MainPage/advertises/SingleBanner";
 import MegaMenuItems from "@/components/MainPage/MegaMenuItems";
-
-
-
-// import * as fetchRepository from '@/repository/FetchApiRepository'
-// import * as axiosRepository from '@/repository/AxiosRepository'
-// and in my getSatitcProps Function=> fetchRepository.GET("public/mainSlider")
+import FooterResponsiveContent from "@/components/responsives/FooterResponsiveContent";
 
 
 
 export default function Home(props) {
+  
   const dispatch=useDispatch()
-  
   dispatch(setImagesData(props.topBannerImage))
-  
- 
   
   return (
     <div className={`${styles.Home}`}>
@@ -34,6 +27,7 @@ export default function Home(props) {
       <div className={`${styles.advertiseSmallBanner}`}><SmallBanner/></div>
       <div className={`${styles.incredibleOffer}`}><IncredibleOffer data={props.incOfferProducts}/></div>
       <div className={`${styles.advertiseLargeBanner}`}><LargeBanner/></div>
+      <div className={`${styles.footerResponsive}`}><FooterResponsiveContent/></div>
     </div>
   );
 }

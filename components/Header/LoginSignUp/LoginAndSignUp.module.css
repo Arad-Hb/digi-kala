@@ -11,7 +11,7 @@
         align-items: center;
         }
         .logoImage{
-            width: 200px !important;
+            width: 150px !important;
         }
         .buttonContainer{
             display: flex;
@@ -32,13 +32,13 @@
             }
             .inactiveButton{
              flex-basis: 50%;
-             font-size: 32px;
+             font-size: 28px;
              font-weight: 800;
              color: white;
             }
             .activeButton{
                 flex-basis: 50%;
-                font-size: 32px;
+                font-size: 28px;
                 font-weight: 800;
                 background-color: white;
                 color: #ee384e;
