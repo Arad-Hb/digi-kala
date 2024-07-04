@@ -5,8 +5,10 @@ import { useDispatch } from 'react-redux'
 import styles from './AddButton.module.css'
 
 const AddButton = (props) => {
+
 const router= useRouter()
 const dispatch=useDispatch()
+
 const addItemToBasketHandler=()=>{
   dispatch(addItem(props.data))
  router.push(`/shoppingCart`)

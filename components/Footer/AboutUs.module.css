@@ -13,3 +13,24 @@
    color: #81858b;
    font-size: 14px;
    }
+   @media (max-width: 480px) {
+.title{
+    display: none;
+   }
+    
+   }
+     
+   /* Media Query for low resolution  Tablets, Ipads */
+   @media (min-width: 481px) and (max-width: 767px) {
+   .title{
+    display: none;
+   }
+   }
+     
+   /* Media Query for Tablets Ipads portrait mode */
+   @media (min-width: 768px) and (max-width: 1024px){
+   .title{
+    display: none;
+   
+   }
+}

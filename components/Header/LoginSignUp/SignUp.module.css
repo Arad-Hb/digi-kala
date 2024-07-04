@@ -80,22 +80,29 @@ color: grey;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 200px;
-        height: 460px;
+        width: 70%;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        margin: 20px auto;
     }
     .loginContent{
         display: flex;
         flex-direction: column;
-        padding: 10px auto;
-    
+        padding: 15px;
     }
+    .title{
+        display: flex;
+        flex-direction: row;
+        color: #ee384e;
+    }
+   
     .field{
         border: 1px solid #e2e2e2;
          border-radius: 10px;
          outline: none;
          color: black;
          font-size: 12px;
-         width: 200px;
+         width: 90%;
          height: 50px;
          margin: 5px auto;
         }
@@ -104,30 +111,93 @@ color: grey;
          outline: none;
          color:white;
          background-color:#ee384e;
-         width: 200px;
+         width: 90%;
          height: 50px;
          border-radius: 10px;
         }
+        .footerText{
+            display: none;
+            }
     
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
-
-}
-  
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){
-
-
-}
-  
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
-
-}
-  
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        height: 560px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    
+    
+    .loginContent{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+    
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        color: #ee384e;
+    }
+    
+    .titleText{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    }
+    .formTitle{
+     display: flex;
+     margin: 20px 10px;
+    }
+    .formTitleText{
+    color: grey;
+    font-size: 14px;
+    }
+    .formContainer{
+        margin:0px auto;
+    }
+    .form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin:0px auto;
+    }
+    .fieldsContainer{
+        margin:0px auto;
+    }
+    .field{
+    border: 1px solid #e2e2e2;
+     border-radius: 10px;
+     outline: none;
+     color: black;
+     font-size: 12px;
+     width: 300px;
+     height: 50px;
+     margin: 5px 0px;
+    }
+    .loginButton{
+     border: none;
+     outline: none;
+     color:white;
+     background-color:#ee384e;
+     width: 300px;
+     height: 50px;
+     border-radius: 10px;
+    }
+    .loginFooter{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    .footerText{
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+    }
 }

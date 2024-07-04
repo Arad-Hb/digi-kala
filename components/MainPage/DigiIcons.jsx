@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styles from './DigiIcons.module.css'
 import { IoIosMore } from "react-icons/io";
+import Link from 'next/link';
 
 const DigiIcons = ({data}) => {
   return (
@@ -11,10 +12,10 @@ const DigiIcons = ({data}) => {
                 return(
                 
                   <div className={`${styles.iconsCard}`}>
-                    <a href={`/products/category/${item.url}`} className={`${styles.iconsLink}`} onClick={()=>console.log("icon clicked")}>
+                    <Link href={`/products/category/${item.url}`} className={`${styles.iconsLink}`}>
                       <Image src={`/images/${item.iconName}`} alt={item.label} height={40} width={40}/>
                       <label className={`${styles.iconsLabel}`}>{item.label}</label>
-                    </a>  
+                    </Link>  
                   </div>
                 
                 )
@@ -22,10 +23,10 @@ const DigiIcons = ({data}) => {
             })
         }
         <div className={`${styles.dottedIconCard}`}>
-           <a href={'/products'} className={`${styles.dottedIconLink}`} onClick={()=>console.log("icon clicked")}>
+           <Link href={'/products'} className={`${styles.dottedIconLink}`}>
             <IoIosMore  className={`${styles.dottedIcon}`}/>
             <label className={`${styles.dottedIconLabel}`}>بیشتر</label>
-          </a>  
+          </Link>  
         </div>
     </div>
   )

@@ -15,6 +15,4 @@ justify-content: start;
 }
 .articleButton:hover{
     color: rgb(91, 139, 241);
-    font-size: 12px;
-    font-weight: bold;
 }

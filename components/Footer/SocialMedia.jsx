@@ -11,10 +11,10 @@ const SocialMedia = () => {
     <div className={`${styles.outerContainer}`}>
         <div className={`${styles.title}`}>همراه ما باشید!</div>
         <div className={`${styles.Links}`}>
-            <Link href={''} className={`${styles.Link}`}><LuInstagram /></Link>
-            <Link href={''} className={`${styles.Link}`}><BsTwitter /></Link>
-            <Link href={''} className={`${styles.Link}`}><ImLinkedin /></Link>
-            <Link href={''} className={`${styles.Link}`}><SiAparat /></Link>
+            <Link href={'#'} className={`${styles.Link}`}><LuInstagram /></Link>
+            <Link href={'#'} className={`${styles.Link}`}><BsTwitter /></Link>
+            <Link href={'#'} className={`${styles.Link}`}><ImLinkedin /></Link>
+            <Link href={'#'} className={`${styles.Link}`}><SiAparat /></Link>
         </div>
     </div>
   )

@@ -5,11 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { NextArrow } from './CaruselArrow';
 import { PrevArrow } from './CaruselArrow';
 import Card from '../MainPage/Products/Card';
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const Carusel = (props) => {
-
   
     let settings = {
         className: "innerSliderDiv",

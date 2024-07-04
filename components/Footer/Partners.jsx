@@ -5,7 +5,9 @@ import Data from '../../files/footerData.json'
 
 
 const Partners = () => {
+
  const data=Data[0]
+
   return (
     <div className={`${styles.outerContainer}`}>
         {
@@ -17,7 +19,6 @@ const Partners = () => {
                 )
             })
         }
-       
     </div>
   )
 }
