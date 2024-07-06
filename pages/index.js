@@ -60,7 +60,7 @@ export async function getStaticProps(context){
       incOfferProducts:incOfferResult
       
     },
-    revalidate:5000
+    revalidate:35000000
   }
 
 }

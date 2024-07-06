@@ -5,9 +5,7 @@
     flex-wrap: nowrap;
     text-align: center;
 }
-.iconsCard{   
 
-}
 .iconsLink{
     display: flex;
     flex-direction: column;
@@ -20,9 +18,7 @@
     font-weight: bold;
     margin: 10px auto;
 }
-.dottedIconCard{
 
-}
 .dottedIconLink{
     display: flex;
     flex-direction: column;

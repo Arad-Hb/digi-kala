@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './ProductPrice.module.css'
 import { MdOutlinePriceChange } from "react-icons/md"
-import { GiProfit } from "react-icons/gi"
 import { RiDiscountPercentLine } from "react-icons/ri"
 import { TbBasketDiscount } from "react-icons/tb"
 import { FcSalesPerformance } from "react-icons/fc"

@@ -12,8 +12,7 @@ const SingleProductHeader = ({data}) => {
       {
         data.incredibleOffers?<Image className={`${styles.incredibleOfferImage}`} alt={data.name} src='/images/IncredibleOffer.svg' width={200} height={50} /> : null
       }
-      </div>
-      
+      </div> 
     </div>
   )
 }

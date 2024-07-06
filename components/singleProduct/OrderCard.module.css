@@ -137,9 +137,7 @@
             margin: 10px;
             font-weight: bold;
             }
-            .delivery{
             
-            }
             .deliveryIcon{
                 font-size: 20px;
             color:blue;
@@ -148,9 +146,7 @@
             font-size: 14px;
             margin: 0px 5px;
             }
-            .fastDelivery{
             
-            }
             .fastDeliveryIcon{
                 font-size: 20px;
                 color: #ee384e;
@@ -166,22 +162,12 @@
              margin: 8px;
              font-weight: bold;
             }
-            .digiClubTitle{
             
-            }
-            .clubIcon{
-            
-            }
-            .clubImage{
-            
-            }
             .titleText{
                 font-size: 14px;
                 margin: 0px 10px;
             }
-            .infoIcon{
             
-            }
             .digiClubPoint{
                 font-size: 14px;
             }
@@ -327,9 +313,7 @@
             margin: 10px;
             font-weight: bold;
             }
-            .delivery{
             
-            }
             .deliveryIcon{
                 font-size: 20px;
             color:blue;
@@ -338,9 +322,7 @@
             font-size: 14px;
             margin: 0px 5px;
             }
-            .fastDelivery{
             
-            }
             .fastDeliveryIcon{
                 font-size: 20px;
                 color: #ee384e;
@@ -356,22 +338,12 @@
              margin: 8px;
              font-weight: bold;
             }
-            .digiClubTitle{
             
-            }
-            .clubIcon{
-            
-            }
-            .clubImage{
-            
-            }
             .titleText{
                 font-size: 14px;
                 margin: 0px 10px;
             }
-            .infoIcon{
             
-            }
             .digiClubPoint{
                 font-size: 14px;
             }
@@ -515,9 +487,7 @@
             margin: 10px;
             font-weight: bold;
             }
-            .delivery{
             
-            }
             .deliveryIcon{
                 font-size: 20px;
             color:blue;
@@ -526,9 +496,7 @@
             font-size: 14px;
             margin: 0px 5px;
             }
-            .fastDelivery{
             
-            }
             .fastDeliveryIcon{
                 font-size: 20px;
                 color: #ee384e;
@@ -544,22 +512,12 @@
              margin: 8px;
              font-weight: bold;
             }
-            .digiClubTitle{
             
-            }
-            .clubIcon{
-            
-            }
-            .clubImage{
-            
-            }
             .titleText{
                 font-size: 14px;
                 margin: 0px 10px;
             }
-            .infoIcon{
             
-            }
             .digiClubPoint{
                 font-size: 14px;
             }
@@ -702,9 +660,7 @@
             margin: 10px;
             font-weight: bold;
             }
-            .delivery{
             
-            }
             .deliveryIcon{
                 font-size: 20px;
             color:blue;
@@ -713,9 +669,7 @@
             font-size: 14px;
             margin: 0px 5px;
             }
-            .fastDelivery{
             
-            }
             .fastDeliveryIcon{
                 font-size: 20px;
                 color: #ee384e;
@@ -731,22 +685,12 @@
              margin: 8px;
              font-weight: bold;
             }
-            .digiClubTitle{
             
-            }
-            .clubIcon{
-            
-            }
-            .clubImage{
-            
-            }
             .titleText{
                 font-size: 14px;
                 margin: 0px 10px;
             }
-            .infoIcon{
             
-            }
             .digiClubPoint{
                 font-size: 14px;
             }
@@ -785,9 +729,6 @@
         flex-direction: row;
         margin-top: 5px;
     }
-    .sellerLogo{
-    
-    }
     .sellerName{
     color: #454e7c;
     margin: 0px 10px;
@@ -808,9 +749,7 @@
     display: flex;
     flex-direction: column;
     }
-    .priceDetails{
     
-    }
     .priceWithAndWithoutDiscount{
         display: flex;
         flex-direction: column;
@@ -869,9 +808,7 @@
     margin: 10px;
     font-weight: bold;
     }
-    .delivery{
     
-    }
     .deliveryIcon{
         font-size: 20px;
     color:blue;
@@ -880,9 +817,7 @@
     font-size: 14px;
     margin: 0px 5px;
     }
-    .fastDelivery{
     
-    }
     .fastDeliveryIcon{
         font-size: 20px;
         color: #ee384e;
@@ -898,22 +833,12 @@
      margin: 8px;
      font-weight: bold;
     }
-    .digiClubTitle{
     
-    }
-    .clubIcon{
-    
-    }
-    .clubImage{
-    
-    }
     .titleText{
         font-size: 14px;
         margin: 0px 10px;
     }
-    .infoIcon{
     
-    }
     .digiClubPoint{
         font-size: 14px;
     }

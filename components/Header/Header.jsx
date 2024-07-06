@@ -35,9 +35,6 @@ const data=authentication()
       </div>
       <div className={`${styles.navBarRow}`}><NavBar/></div>
     </div>
-    <div className={`${styles.responsiveContainer}`}>
-
-    </div>
   </div>
     
     

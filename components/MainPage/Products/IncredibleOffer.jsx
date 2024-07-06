@@ -1,5 +1,5 @@
 import Carusel from '@/components/carusel/Carusel'
-import React, { useContext } from 'react'
+import React from 'react'
 import styles from './IncredibleOffer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'

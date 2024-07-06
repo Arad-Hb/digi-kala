@@ -1,9 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
-import SERVER from '../../config/myConfig.json'
-import axios from 'axios'
+import React from 'react'
 import Image from 'next/image'
 import styles from './TopBanner.module.css'
-import { GET } from '@/repository/AxiosRepository'
 import { useSelector } from 'react-redux'
 
 

@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import styles from './NavMenu.module.css'
 import Link from 'next/link'
 import { GiHamburgerMenu } from "react-icons/gi"
-import MenuSideBar from './MenuSideBar'
-import MenuContent from './MenuContent'
 import MegaMenu from './MegaMenu'
 
 
