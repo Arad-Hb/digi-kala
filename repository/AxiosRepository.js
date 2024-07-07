@@ -12,7 +12,7 @@ export const POST = (url, body) => {
             headers: {
                 
                 'Content-Type': 'application/json',
-                'scheme': 'http',
+                'scheme': 'https',
             }
            }
     )

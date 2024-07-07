@@ -17,6 +17,10 @@ const nextConfig = {
       }
     ],
   },
+  httpAgentOptions: {
+    keepAlive: false,
+  },
+
   
 };
 
