@@ -3,7 +3,7 @@ import styles from './Login.module.css'
 import UsersErrorMessage from './UsersErrorMessage'
 import * as Yup from 'yup'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
-import { POST } from '../../../repository/AxiosRepository'
+import { POST } from "@/repository/FetchRepository"
 import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
 

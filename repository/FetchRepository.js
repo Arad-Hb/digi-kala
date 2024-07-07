@@ -3,18 +3,21 @@ import SERVER from '../config/myConfig.json'
 export const GET =(url)=>{
 return fetch(`${SERVER.Address1}${url}`)
 }
-export const POST = async (url, body) => {
+export const POST = async (url, Body) => {
+ 
     try {
         const response = await fetch(`${SERVER.Address1}${url}`, {
-            method: 'POST',
+            method: "POST",
             headers: {
-                'Content-type': 'application/json',
+                "Content-Type": "application/json"
             },
-            body,
+            body:Body
         });
         const data = await response.json();
         console.log(data);
-    } catch (error) {
+       
+    } 
+    catch (error) {
         console.error(error);
     }
 }
